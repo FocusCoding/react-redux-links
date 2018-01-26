@@ -47,6 +47,50 @@
   https://css-tricks.com/react-router-4/  
   A deep look at patterns and strategies for using React-Router v4 successfully.
   
+- **React Router DOM: set-up, essential components, & parameterized routes**  
+  https://blog.logrocket.com/react-router-dom-set-up-essential-components-parameterized-routes-505dc93642f1  
+  An introduction to the concept of a router, setting up React-Router, essential parts of the library, and how to build routes that have parameters.
+  
+- **Advanced React Router concepts: recursive path, code splitting, animated transitions, and more**  
+  https://blog.logrocket.com/advanced-react-router-concepts-code-splitting-animated-transitions-scroll-restoration-recursive-17096c0cf9db  
+  A tutorial that demonstrates how to implement a variety of useful features using React-Router v4.
+  
+- **React Router 4 Tutorial From Scratch**  
+  https://appdividend.com/2017/09/12/react-router-tutorial-example-scratch/  
+  A short tutorial demonstrating use of React Router v4
+  
+- **React Router v4 Unofficial Migration Guide**  
+  https://codeburst.io/react-router-v4-unofficial-migration-guide-5a370b8905a  
+  Practical advice and specific steps needed to migrate an app from React-Router v3 to v4.
+  
+- **Introduction to React Router**  
+  https://dev.to/aurelkurtula/introduction-to-react-router-ha  
+  A quick look at the basics of React-Router v4.
+  
+- **React Router DOM, plain and simple**  
+  http://coding4real.com/2017/12/19/using-react-router-dom/  
+  An introduction that shows how to add React-Router to a basic React app, and describes the basic API.
+  
+- **React Router v4: The Complete Guide**  
+  https://www.sitepoint.com/react-router-v4-complete-guide/  
+  A detailed tutorial that covers the React Router v4 API and concepts, with many examples
+  
+- **React Router v4: Philosophy and Introduction**  
+  https://tylermcginnis.com/react-router-philosophy-introduction/  
+  A deep look at the history of React Router, and how v4 works as "just components".
+  
+- **Server Rendering, Code Splitting, and Lazy Loading with React Router v4**  
+  https://medium.com/airbnb-engineering/server-rendering-code-splitting-and-lazy-loading-with-react-router-v4-bfe596a6af70  
+  Technical discussion of the problems involved in code-splitting server rendered apps, and how Airbnb has implemented solutions using React-Router v4 and Babel.
+  
+- **URL Parameters with React Router**  
+  https://tylermcginnis.com/react-router-url-parameters/  
+  Tyler McGinnis gives a short example of  how to use parameters from the current URL in a component with React-Router v4
+  
+- **Using React Router v4 with create-react-app**  
+  https://codingblast.com/react-router-create-react-app/  
+  Explains key concepts of React-Router v4, and gives examples of using it in a CRA project
+  
   
 #### Routing with Redux
   
@@ -94,6 +138,10 @@
   https://www.dailydrip.com/topics/react/drips/redux-first-router-first-impressions  
   A short tutorial that shows how to add redux-first-router to a CRA project and configure it.
   
+- **React Router to Redux First Router**  
+  https://medium.com/@jonsamp/react-router-to-redux-first-router-2fea05c4c2b7  
+  Describes some of the problems the Codecademy team had using React-Router in conjunction with Redux, and why they switched to Redux-First-Router instead.
+  
   
 #### Authentication
 
@@ -124,3 +172,16 @@
 - **Preact Authentication Tutorial**  
   https://auth0.com/blog/preact-authentication-tutorial/  
   A tutorial that demonstrates how to build an app with Preact, including authentication, and makes some comparisons to doing so in React.
+  
+- **How to Implement Authentication for Your React App**  
+  https://medium.appbase.io/how-to-implement-authentication-for-your-react-app-cf09eef3bb0b  
+  https://medium.appbase.io/securing-a-react-web-app-with-server-side-authentication-1b7c7dc55c16  
+  A pair of posts that demonstrate implementing both client-side and server-side authentication behavior for a React/Node app.
+  
+- **Protected Routes and Authentication with React Router v4**  
+  https://tylermcginnis.com/react-router-protected-routes-authentication/  
+  A great tutorial that shows how to create routes that only authenticated users can access.
+  
+- **Securing a React Web App with Authorization Rules**  
+  https://medium.appbase.io/securing-a-react-web-app-with-authorization-rules-2e43bf5592ca  
+  A tutorial that shows how to add authorization and authentication to a Todo app

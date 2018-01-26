@@ -5,7 +5,7 @@
    Describes the three basic principles of FP: "data in/data out", "code as data", and "function composition" all the way down, and demonstrates transforming some data.  Has some _very_ helpful graphics and illustrations.
    
 - **Understanding Programmatic Side Effects**  
-  https://web.archive.org/web/20160326014453/http://web24studios.com/2015/10/understanding-programmatic-side-effects/  
+  http://c2fo.io/c2fo/programming/2016/05/11/understanding-programmatic-side-effects/  
   A short article that explains the concept of "side effects"
   
 - **What Is Functional Programming?**  
@@ -158,3 +158,23 @@
 - **What's Functional Programming All About?**  
   http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html  
   A detailed explanation of how "functional" programming differs from "imperative" programming, using a food recipe as an example of the steps involved.
+  
+- **Higher Order Functions and Redux Thunk**  
+  https://medium.com/@joedski/higher-order-functions-and-redux-thunk-1e5983ae6b03  
+  An exploration of ways to wrap behavior around thunks, including composing functions together.
+
+- **Functional Programming Jargon**  
+  https://functional.works-hub.com/blog/Functional-Programming-Jargon  
+  A large list of functional programming terms, with explanations for each and examples of those terms using JS
+  
+- **Awesome FP JS**  
+  https://github.com/stoeffel/awesome-fp-js  
+  A collection of links to libraries, tools, and resources for FP usage in JS
+  
+- **Currying vs Partial Application**  
+  http://www.datchley.name/currying-vs-partial-application/  
+  A great explanation of the difference between "currying" functions and "partially applying" them
+  
+- **Lodash is not (only) for list manipulation!**  
+  https://blog.pragmatists.com/lodash-is-not-only-for-list-manipulation-791c2e3b9de1  
+  Examples of how to compose the `lodash/fp` functions to create functional data transformation pipelines.

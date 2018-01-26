@@ -102,6 +102,18 @@
   https://www.viget.com/articles/unpacking-the-mysteries-of-webpack-a-novices-journey  
   Recaps some high-level Webpack terms and concepts, and walks through several changes to speed up compilation and improve bundle size.
   
+- **How to Improve Webpack Performance in Large Projects**  
+  https://redfin.engineering/tech-talk-recap-how-to-improve-webpack-performance-in-large-projects-5435bb18dd18  
+  Slides, audio, and summary of a talk on various ways to improve Webpack build performance, including disabling sourcemaps for dev builds, parallelizing work, and using DllPlugin.
+  
+- **How we improved Webpack build performance by 95%**  
+  https://blog.box.com/blog/how-we-improved-webpack-build-performance-95/  
+  Tips for speeding up builds by using Babel caching, not exporting arrays of configs, and doing work in parallel.
+  
+- **Keep Webpack Fast: A Field Guide for Better Build Performance**  
+  https://slack.engineering/keep-webpack-fast-a-field-guide-for-better-build-performance-f56a5995e8f1  
+  An excellent article from Slack's frontend team, listing ways to improve Webpack build speed.  Gives overviews of profiling, parallelization tools, reducing workloads, and caching, with plenty of mentions for specific tools and techniques.
+  
   
   
 #### Code Splitting and Chunking
@@ -162,6 +174,39 @@
   https://medium.com/faceyspacey/announcing-react-universal-component-2-0-babel-plugin-universal-import-5702d59ec1f4  
   Introduces some new Webpack addons and changes that enable dynamic import expressions, including use with SSR.
   
+- **Using Redux Saga and code splitting to async load React components**  
+  https://gist.github.com/jballands/accc2ff19a3702685d469c612d6f0776  
+  A gist that demonstrates using sagas to drive the loading of React components as needed, with some discussion in the comments of the best way to handle those components once they're received by the app.
+  
+- **Impress Your Friends with Code Splitting in React**  
+  https://hackernoon.com/impress-your-friends-with-code-splitting-in-react-9f9a3ca2ae6e  
+  Examples of using `async/await` and dynamic `import()` to lazy-load React components and display them after they're loaded.
+  
+- **ECMAScript Asychronicity - dynamic import**  
+  https://blog.eleven-labs.com/en/ecmascript-asynchronicity-dynamic-import/  
+  Recaps ES6 module behavior and use of Webpack's CommonsChunkPlugin, and describes how to lazy load code using `require.ensure` and the new dynamic `import()` capability.
+  
+- **Component Level Isomorphic Webpack Code-Splitting**  
+  https://medium.com/discovery-engineering/component-level-isomorphic-webpack-code-splitting-b98922382cc1  
+  Looks at the use cases for code splitting, the different ways Webpack can be used to do code splitting, problems with synchronous loading on the server vs async loading on the client, and how the React Universal Component toolkit can help  solve those issues.
+  
+- **Lazy Loading with React, Redux, and Webpack 2+**  
+  https://medium.com/front-end-hacking/lazy-loading-with-react-and-webpack-2-8e9e586cf442  
+  https://medium.com/front-end-hacking/lazy-loading-with-react-redux-and-webpack-2-35ad6fc1b640  
+  An excellent pair of posts that cover ways to structure components in terms of features, load them at runtime using Webpack's dynamic importing, and apply the same principles to loading Redux feature logic.
+  
+- **How to reduce your bundle size by automatically getting your dependencies from a CDN**  
+  https://medium.com/comparethemarket/how-to-reduce-your-bundle-size-by-automatically-getting-your-dependencies-from-a-cdn-96b25d1e228  
+  A quick example of using the `dynamic-cdn-webpack-plugin` to have your bundle reference libraries from the Unpkg CDN, rather than including them in the main bundle.
+  
+- **Webpack 3, Dynamic Imports, Code Splitting, and Long Term Caching Made Easy**  
+  https://blog.cloudboost.io/webpack-3-dynamic-imports-code-splitting-and-long-term-caching-made-easy-1892981e0ae7  
+  Describes how to configure Webpack and use React-Loadable to set up code-splitting, as well as set up consistent module hash IDs.
+  
+- **Two Tips to Improve Performance by 30% with React and Webpack**  
+  http://engineering.teacherspayteachers.com/2017/08/16/two-tips-to-improve-performance-by-30-with-react-and-webpack.html  
+  Looks at ways the Teachers Pay Teachers team used async bundle loading and bundle size optimization to improve their load time.
+
   
 #### Bundle Sizes and Visualization
 
@@ -225,6 +270,24 @@
   https://medium.com/@Pinterest_Engineering/introducing-bonsai-an-open-source-webpack-analyzer-6bdfe22f8984  
   The Pinterest team describes the problems they'd encountered optimizing their Webpack bundles, and introduces a new tool to help analyze bundles and dependency trees.
   
+- **Size Limit: Make the Web Lighter**  
+  https://evilmartians.com/chronicles/size-limit-make-the-web-lighter  
+  Demonstrates writing a tiny library that results in a 100KB Webpack bundle, and then walks through improving the Webpack settings to improve bundle size to only 17B.
+  
+- **Put Your Webpack Bundle On A Diet**  
+  https://www.contentful.com/blog/2017/10/10/put-your-webpack-on-a-diet-part-1/  
+  https://www.contentful.com/blog/2017/10/19/put-your-webpack-bundle-on-a-diet-part-2/  
+  https://www.contentful.com/blog/2017/10/27/put-your-webpack-bundle-on-a-diet-part-3/  
+  A multi-part series that covers approaches for shrinking bundle size, ranging from simply using Webpack's -p flag up to advanced optimizations.
+  
+- **What Lurks Within: Reducing Bundle Sizes with Webpack Bundle Analyzer**  
+  http://engineering.teacherspayteachers.com/2017/12/20/reducing-bundle-sizes-with-webpack-bundle-analyzer.html  
+  Tips for using the Webpack Bundle Analyzer tool to track down large dependencies. 
+  
+- **Webpack Bundle Analysis - A necessary step for all React / Angular / Vue developers!**  
+  https://hackernoon.com/webpack-bundle-analysis-a-necessary-step-for-all-react-angular-vue-application-developers-fe6564fa62ca  
+  Walks through the process of analyzing an Angular bundle and improving build steps to cut down on bundle size.
+  
   
 #### Hot Module Replacement
 
@@ -246,6 +309,10 @@
   http://andrewhfarmer.com/3-ways-webpack-hmr/  
   http://andrewhfarmer.com/webpack-hmr-tutorial/  
   A very readable and informative series of articles on using HMR.  
+  
+- **Blogged Answers: Webpack HMR vs React-Hot-Loader**  
+  http://blog.isquaredsoftware.com/2017/08/blogged-answers-webpack-hmr-vs-rhl/  
+  A description of the differences between the HMR API offered by Webpack and how the React-Hot-Loader tool works, and advice on using "plain HMR".
   
  - **SurviveJS: Hot Module Replacement**  
    https://survivejs.com/webpack/appendices/hmr/  
@@ -291,6 +358,10 @@
   https://medium.com/@antonkorzunov/how-to-hot-load-react-component-in-7-days-part-1-webpack-d8b77eea61eb  
   https://codeburst.io/how-to-hot-load-react-component-in-7-days-part-2-react-28ce2b61d0c7  
   A 2-part article that discusses how to set up plain HMR and add React-Hot-Loader, as well as many of the complexities of using RHL.
+  
+- **Hot reloading in React apps with code splitting**  
+  https://medium.com/zoover-engineering/hot-reloading-in-react-apps-with-code-splitting-17e6793fc80d  
+  Looks at complexities in using RHL and React-Loadable together, and shows a Babel plugin that can help turn off code-splitting in development mode.
 
 
 #### Other Tips and Examples
@@ -383,6 +454,27 @@
   https://medium.com/webmonkeys/webpack-2-semantic-ui-theming-a216ddf60daf  
   Discusses how to configure Webpack to load Semantic-UI's LESS files to allow use of a custom theme.
   
+- **Webpack: Creating dynamically named outputs for wildcarded entry files**  
+  https://medium.com/@sanjsanj/webpack-creating-dynamically-named-outputs-for-wildcarded-entry-files-9241f596b065  
+  Demonstrates a useful technique for collecting files based on globbing, and generating Webpack entry definitions from those files.
+  
+- **To ship less code, write transpiler-aware Javascript**  
+  https://medium.com/@jbartos/to-ship-less-code-write-transpiler-aware-javascript-a56250296760  
+  Tips for improving bundle size by using syntax supported natively by browsers, as well as other techniques for improving bundle output.
+  
+- **Deploying ES2015+ Code in Production Today**  
+  https://philipwalton.com/articles/deploying-es2015-code-in-production-today/  
+  Discusses a way to use `script type="module"` loading as a way to determine if a browser supports most modern syntax, and how to configure Babel to target modern browsers.  Not Webpack specific, but useful.
+  
+- **Long term caching using Webpack records**  
+  https://medium.com/@songawee/long-term-caching-using-webpack-records-9ed9737d96f2  
+  Looks at how to use the RecordsPlugin to ensure consistent filenames between builds, allowing for more predictable bundle output for long-term caching of files.
+  
+- **The Contributor's Guide to Webpack**  
+  https://medium.com/webpack/the-contributors-guide-to-webpack-part-1-a0410cc82ca4  
+  https://medium.com/webpack/the-contributors-guide-to-webpack-part-2-9fd5e658e08c  
+  https://medium.com/webpack/the-contributors-guide-to-webpack-part-3-44cc149af02c  
+  A series by Webpack maintainer Sean Larkin that dives into the internals of Webpack. Topics include packages that are maintained by the Webpack core team, the Tapable plugin base class, and how Webpack builds its dependency graph.
 
   
 #### Webpack Tools

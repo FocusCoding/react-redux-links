@@ -10,10 +10,13 @@ While this list is primarily focused on learning React and Redux, and generally 
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
   Mozilla maintains a fantastic set of developer resources for Web technologies, including a comprehensive reference to the Javascript language and a number of associated tutorials.  Their "reintroduction to Javascript" article is a great overview of what the language looks like.
   
+- **Modern JS Cheatsheet**  
+  https://github.com/mbeaudru/modern-js-cheatsheet  
+  An extensive list of explanations for syntax and concepts used in modern JS applications
   
 - **Eric Elliott's Javascript Resource Lists**  
   https://medium.com/javascript-scene/10-priceless-resources-for-javascript-learners-bbf2f7d7f84e  
-  https://gist.github.com/ericelliott/d576f72441fc1b27dace/0cee592f8f8b7eae39c4b3851ae92b00463b67b9
+  https://gist.github.com/ericelliott/d576f72441fc1b27dace/0cee592f8f8b7eae39c4b3851ae92b00463b67b9  
   Eric Elliott is a strong proponent of Javascript, has written numerous articles about learning and understanding Javascript, and assembled some very useful lists of numerous Javascript resources.  (Note that he is very strongly opinionated in his own articles, particularly about certain code patterns that he feels everyone should follow, but overall his advice and information is pretty solid.)
   
 - **Wes Bos's Javascript Resource List**  
@@ -53,6 +56,10 @@ While this list is primarily focused on learning React and Redux, and generally 
   https://gist.github.com/ljharb/58faf1cfcb4e6808f74aae4ef7944cff  
   An explanation of all the different Array methods that loop over the array, what they do, and when they should be used
   
+- **Front End Interview Preparation Guide**  
+  https://github.com/Jobeir/front-end-interview-preparation-guide  
+  A list of useful books, courses, and resources for learning JS, and links to interview questions and quizzes that would be beneficial in helping test out knowledge.
+  
 
 #### Tutorials, Books, and Courses
 
@@ -67,6 +74,10 @@ While this list is primarily focused on learning React and Redux, and generally 
 - **Exploring Javascript**  
   http://exploringjs.com/  
   Multiple free online books from Dr. Axel Rauschmayer.  "Speaking Javascript" covers all of Javascript through ES5; "Exploring ES6" covers ES6 in depth; and other books look at versions of Javascript after ES6 and how to set up an ES6+ development environment.
+  
+- **The Modern Javascript Tutorial**  
+  http://javascript.info/  
+  A large tutorial series that covers all aspects of the modern Javascript language (basic syntax, data types, objects, and advanced function usage), as well as a section on using Javascript to interact with the DOM in web pages.
   
 - **23 Free Javascript Books**  
   https://hackerlists.com/free-javascript-books/  
@@ -96,24 +107,19 @@ While this list is primarily focused on learning React and Redux, and generally 
   A free course from Wes Bos that teaches how to build 30 different interesting projects, using only "vanilla" Javascript.
   
 - **Javascript; The Core**  
-  http://dmitrysoshnikov.com/ecmascript/javascript-the-core/  
-  A dive into core concepts of how Javascript objects behave: prototypes, constructors, scopes, closures, and `this`.
-  
-- **The Modern Javascript Tutorial**  
-  http://javascript.info/  
-  A large tutorial series that covers all aspects of the modern Javascript language (basic syntax, data types, objects, and advanced function usage), as well as a section on using Javascript to interact with the DOM in web pages.
+  http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/  
+  A dive into core concepts of how Javascript objects behave: prototypes, constructors, scopes, closures, and `this`.  The second edition includes more of a focus on ES6 and newer features.
   
 - **The JavaScript Way**  
   https://github.com/bpesquet/thejsway  
   A modern introduction to the JavaScript language, intended to be beginner-friendly, comprehensive, standards-aligned with the latest syntax and good practices, and hands-on.
-  
-  
-#### Interactive Exercises
-
-
 
 
 #### Online Code Editors
+
+- **CodeSandbox**  
+  https://codesandbox.io  
+  A full-fledged online IDE that lets you build entire applications using React, Vue, and other toolkits.
 
 - **A Roundup of Online Code Playgrounds**  
   https://www.sitepoint.com/round-up-online-code-playgrounds/  
@@ -168,7 +174,18 @@ While this list is primarily focused on learning React and Redux, and generally 
 - **Which Array Function When?**  
   https://dev.to/andrew565/which-array-function-when  
   A great explanation of the differences between the various methods that can loop over arrays (`map`, `filter`, `reduce`, and `forEach`), and when you should use each one.
-
+  
+- **What is This in Javascript?**  
+  https://developer.telerik.com/topics/web-development/what-is-this-in-javascript/  
+  An easy-to-read explanation of the different ways `this` can be defined in a function.
+  
+- **Everything you wanted to know about JavaScript scope**  
+  https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/  
+  A detailed look at the concept of "scopes" in JS, including global, local, function, and lexical scopes, and how `this` behaves in relation to scopes.
+  
+- **On `this` in Javascript**  
+  http://georgemauer.net/2017/08/03/on-this-in-javascript.html  
+  Describes how `this` is just a function parameter you don't get to name, and shows how it works with normal functions, arrow functions, and classes
 
 #### Paid Courses and Books
 

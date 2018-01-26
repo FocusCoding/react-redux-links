@@ -34,6 +34,10 @@
   https://medium.com/@fastphrase/when-to-use-redux-f0aa70b5b1e2  
   Some helpful thoughts on when you should use Redux: same app state needed in multiple components, global components that need to be accessed anywhere, too much prop passing, and more.
   
+- **When (and when not) to use Redux**  
+  https://blog.logrocket.com/when-and-when-not-to-use-redux-41807f29a7fb  
+  A useful summary of the problems Redux can help solve in React apps, the major benefits of using Redux, reasons why you might not need Redux, and the basic concepts of Redux.
+  
   
 #### Redux Architecture
 
@@ -111,6 +115,22 @@
   https://www.reddit.com/r/reactjs/comments/6ec4dz/i_made_a_diagram_of_the_design_of_my_first_react/  
   A Reddit thread with some excellent discussion about how Apollo and GraphQL fit into the architecture of a Redux application.
   
+- **Turning Requirements into React/Redux Code**  
+  https://decembersoft.com/posts/turning-requirements-into-react-redux-code/  
+  Looks at a typical description of desired behavior for a loading/container component, then walks through breaking the description into requirements and shows how to implement those in React and Redux.
+  
+- **Scaling React/Redux in Yahoo Finance**  
+  https://medium.com/@longho/scaling-react-redux-in-yahoo-finance-88ef9e89b55c  
+  The Yahoo Finance team describes how they've structured their React+Redux architecture, including data layers, action and state structures, use of API and analytics middleware, routing, rendering, and server-side garbage collection. 
+  
+- **How We're Sharing Code Between React and React Native**  
+  https://blog.smartive.ch/how-were-sharing-code-between-react-and-react-native-607cdd1f5247  
+  A look at how Redux-based code can be shared between multiple platforms in a framework-agnostic way, with discussion on which types of code are most sharable.
+  
+- **How We React at Microsoft To-Do**  
+  https://www.youtube.com/watch?v=CWxc3AYja1I  
+  A 10-minute presentation from a Microsoft engineer for how they approach connecting all of their components to Redux.
+  
   
 #### Redux Best Practices
   
@@ -172,7 +192,7 @@
   Discussion of how Redux helped Knewton improve their app, including dev middleware to catch accidental mutations, normalization to help with caching, and other tradeoffs.
   
 - **4 Things for Efficient Redux**  
-  https://blog.spacelab.team/4-things-for-efficient-redux-17e87b4cd6cb  
+  https://medium.com/@iJaniashvili/4-things-for-efficient-redux-17e87b4cd6cb  
   Suggestions for improved Redux apps based on experience, including using Immutable.js, use of `combineReducers`, listening for actions in multiple reducers, and "aliasing" actions.
   
 - **A Year of Development with Redux**  
@@ -181,7 +201,7 @@
   Some quick tips for working with Redux, structuring data, and encapsulation of components
   
 - **Avoiding False Cause**  
-  http://sebinsua.com/avoiding-false-cause/  
+  http://duplo.tech/avoiding-false-cause/  
   Some high-level general thoughts on cargo-culting, dogma, and best practices, followed by some specific examples of problematic Redux code (unclear reducer state shape, managing "editing" mode data, applying arbitrary value updates)
   
 - **Isn't our code just the BEST**  
@@ -190,7 +210,7 @@
   
 - **When to Define Action Creators in Redux**  
   https://daveceddia.com/redux-action-creators/  
-  An excellent overview of why action creators exist, why they’re worth using, and when you can skip them
+  An excellent overview of why action creators exist, why theyâ€™re worth using, and when you can skip them
   
 - **React Redux Design Lessons Learned**  
   http://www.jeremyzerr.com/sites/default/files/React-Redux-Design-Lessons-Learned.pdf  
@@ -249,7 +269,8 @@
   https://tech.iheart.com/video-journey-of-a-thousand-ducks-f0bb1a9b982c  
   Devs from the iHeartRadio web team describe how they have approached refactoring their React app with homegrown state management to use Redux.
   
-- **React+Redux: Tips and Best Practices for Clean, Reliable, & Maintainable Code**  https://speakerdeck.com/goopscoop/react-plus-redux-tips-and-best-practices-for-clean-reliable-and-scalable-code  
+- **React+Redux: Tips and Best Practices for Clean, Reliable, & Maintainable Code**    
+  https://speakerdeck.com/goopscoop/react-plus-redux-tips-and-best-practices-for-clean-reliable-and-scalable-code  
   An excellent slideshow with a wide variety of tips and suggestions, including keeping action creators simple and data manipulation in reducers, abstracting away API calls, avoiding spreading props, and more.
   
 - **Why not to store objects in Redux**  
@@ -264,6 +285,62 @@
   https://medium.com/@uttamkini/scaling-redux-part-1-codebase-organization-80f978cd8a72  
   https://medium.com/@uttamkini/scaling-redux-part-2-organizing-state-8a1c5e8fffbf  
   Several suggestions for managing a Redux codebase, including use of feature folders / ducks, separating data and UI state in the store, organizing data by API structure, and more.
+  
+- **Tips for success with React and Redux**  
+  https://medium.com/@AlexFaunt/tips-for-success-with-react-and-redux-b782c6b22ff0  
+  Advice on how much of your React component tree should be connected to Redux, using non-HTML components to manage things like document titles, consistently using actions for app behavior, and moving app logic out of components.
+  
+- **Chart the Stock Market with React, Redux, React-Vis, and Socket.io**  
+  https://medium.com/@ddcreationstudi/chart-the-stock-market-with-react-redux-react-vis-and-socket-io-18caf312693c  
+  An overview of approaches used and lessons learned in writing a real-time stock market charting example app.  Not a tutorial specifically, but some useful ideas for structuring things.
+  
+- **Growing Pains: Migrating Slack's Desktop App to BrowserView**  
+  https://slack.engineering/growing-pains-migrating-slacks-desktop-app-to-browserview-2759690d9c7b  
+  The Slack team discusses how they use Redux in an Electron app, including use of the `electron-redux` middleware for syncing actions between Redux stores in different Electron processes and use of `redux-observable` for managing side effects.
+  
+- **Redux: Architecting and scaling a new web app at the NY Times**  
+  https://www.youtube.com/watch?v=lI3IcjFg9Wk  
+  A talk from an NY Times developer describing how they scaled a React+Redux app to over a million users per month.
+  
+- **"React and Redux as a framework"**  
+  https://www.reddit.com/r/javascript/comments/747vx1/react_and_redux_as_a_framework/  
+  Useful discussion of where "business logic" should live in a Redux app, such as data fetching and transformation.
+  
+- **How to approach making changes to an existing React-Redux application**  
+  https://gautamdhameja.com/how-to-approach-making-changes-to-an-existing-react-redux-application-ae00482c0f9a  
+  A clear suggested order of steps to follow when adding new functionality to a React+Redux app.
+  
+- **Tips for Redux**  
+  https://www.yihangho.com/tips-for-redux/  
+  Some excellent tips for working with Redux, including designing the state tree, dealing with side effects, implementing optimistic updates, and more.
+  
+- **How We Built Our UI**  
+  https://www.endgame.com/blog/technical-blog/how-we-built-our-ui  
+  The Endgame team discusses why they rebuilt their app's UI, why they picked React and Redux, use of REdux-Saga to manage business logic, and how the data workflow fits together.
+  
+- **Best practices with React and Redux application development**  
+  https://developers.redhat.com/blog/2017/11/15/best-practices-react-redux-web-application-development/  
+  A wide variety of suggestions, including use of TypeScript, customizing build configurations, managing dependencies, handling callbacks with params, using selectors, and more.
+  
+- **How Bitmovin used React/Redux to Develop Its New Dashboard**  
+  https://bitmovin.com/bitmovin-used-reactredux-to-develop-new-dashboard/  
+  The Bitmovin team describes their React+Redux architecture, including how they approached organizing Redux actions.
+  
+- **What I've learned from a few large-scale React and Redux projects**  
+  https://medium.com/20spokes-whiteboard/what-ive-learned-from-a-few-large-scale-react-and-redux-projects-d454000da167  
+  Some short thoughts on best practices from using React and Redux, including ensuring all logic is tested, having descriptive Redux actions that tell a story, and ensuring React components are understandable by using prop types.
+  
+- **Redux Anti-Patterns: State Management**  
+  http://blog.mgechev.com/2017/12/07/redux-anti-patterns-race-conditions-state-management-duplication/  
+  Some good descriptions of common anti-patterns in Redux apps, with examples and solutions.  Looks at state duplication, state ownership, and handling of state updates.
+  
+- **"So much to learn about organizing Redux state by looking at popular apps"**  
+  https://mobile.twitter.com/tharakawj/status/937285802287124480  
+  A tweet with screenshots of the Redux DevTools, showing the contents of Redux stores from Twitter and Pinterest.
+  
+- **5 Strategies to Prevent Bugs in a Large Redux Codebase**  
+  https://decembersoft.com/posts/5-strategies-to-prevent-bugs-in-a-large-redux-codebase/  
+  Short but useful thoughts on using testing, static typing, immutability, parameter validation, and code reviews with Redux apps.
 
 
 #### Encapsulation and Reusability
@@ -306,7 +383,7 @@
   http://randycoulman.com//blog/2016/09/13/encapsulating-the-redux-state-tree/  
   http://randycoulman.com/blog/2016/09/20/redux-reducer-selector-asymmetry/  
   http://randycoulman.com/blog/2016/09/27/modular-reducers-and-selectors/  
-  http://randycoulman.com/blog/2016/11/29/globalizing-redux-selectors
+  http://randycoulman.com/blog/2016/11/29/globalizing-redux-selectors  
   A blog series discussing approaches to encapsulating Redux data using selectors and other related approaches
   
 - **Redux State Keys - A predictable yet dynamic substate**  
@@ -345,10 +422,6 @@
   http://www.thesoftwaresimpleton.com/blog/2016/12/20/instance-reducers/  
   An interesting approach to the "multiple instances of a connected component" problem.
   
-- **Managing state for multiple component instances using React and Redux**  
-  https://medium.com/@mikefey/managing-state-for-multiple-component-instances-using-react-and-redux-623ef7448cbe  
-  Some useful examples illustrating the basic approach to storing data for individual reusable component instances in a Redux store
-  
 - **How to use Redux on highly scalable Javascript applications?**  
   https://medium.com/@alexmngn/how-to-use-redux-on-highly-scalable-javascript-applications-4e4b8cb5ef38  
   Discussion of ways to structure reducers, selectors, and other logic into reusable features
@@ -356,6 +429,27 @@
 - **Building a simple Redux library**  
   https://medium.com/@tcclevela/building-a-simple-redux-library-44ce4f004822  
   Looks at important steps to follow when building a Redux addon library: only use middleware if really needed, keep things simple, and encapsulate abstractions.  Shows a particularly good example of using selectors in the library to encapsulate state lookups, and allowing the end user to initialize the selectors so that the data can be mounted anywhere in the state tree the user wants.
+  
+- **Namespacing Actions for Redux**  
+  https://kickstarter.engineering/namespacing-actions-for-redux-d9b55a88b1b1  
+  Looks at ways to namespace actions so that multiple copies of components and logic can work in an isolated manner, especially in conjunction with the `redux-loop` library.
+  
+- **Selector Pattern: Painless Redux Store Destructuring**  
+  https://hackernoon.com/selector-pattern-painless-redux-store-destructuring-bfc26b72b9ae  
+  Good examples of creating encapsulated selectors that are given just their slice of state as arguments, with a centralized definition of how the state slices map to those selectors.
+  
+- **Fractal Architecture**  
+  http://antontelesh.github.io/architecture/2016/03/16/fractal-architecture.html  
+  Discesses some rules of fractal architecture, looks at how those apply to React, Elm, and Cycle, and then describes ways to apply those rules to Redux code to enforce modularity.
+  
+- **Restate - the store of Redux Tree**  
+  https://medium.com/@antonkorzunov/restate-the-story-of-redux-tree-27d8c5d1040a  
+  https://medium.com/@antonkorzunov/the-state-of-the-state-of-the-state-f93c8bdc6b1b  
+  Describes a library that can wrap up React components so they only see a portion of a Redux store
+  
+- **Dependency Injection in Redux**  
+  https://www.codesai.com/2017/04/dependency-injection-react-redux  
+  Examples of using component factories to generate connected components and allow easier testing
 
 
 #### Variations on Redux Architectures
@@ -428,3 +522,41 @@
   https://medium.com/dailyjs/mvc-implemented-by-react-and-causality-redux-c4125a01e95c  
   https://medium.com/@causality_redux/react-redux-how-to-write-significantly-less-code-c0562ff06d5a  
   A pair of posts discussing how to use the "causality-redux" library to implement an MVC-type architecture on top of React and Redux.
+  
+- **Connecting React components to a Redux store with render callbacks**  
+  https://medium.com/@gott/connecting-react-component-to-redux-store-with-render-callback-53fd044bb42b  
+  Demonstrates using the React "render props" pattern to pass down data from a Redux store, rather than using `connect`.
+  
+- **"Anyone using Redux with a render prop?"**  
+  https://twitter.com/threepointone/status/913701233394900992  
+  A Twitter thread discussing use of render props as an alternative to `connect`.  Includes a reply by Dan Abramov, who points out that this is how React-Redux originally worked, but it was changed to an HOC to better deal with side effects from state changes.
+  
+- **"Redux Connect as render props" discussion**  
+  https://news.ycombinator.com/item?id=15427954  
+  https://twitter.com/mjackson/status/915335846324092930  
+  A couple of discussion threads looking at the recent popularity of of experiments with `connect` as a render prop.
+  
+- **Kea: A High Level Abstraction between React and Redux**  
+  https://medium.com/@mariusandra/kea-vs-setstate-redux-mobx-dva-jumpstate-apollo-etc-4aa26ea11d02  
+  https://survivejs.com/blog/kea-interview/  
+  An article by the author of the Kea library discussing how it makes it easier to use React and Redux together, and an interview with the author discussing the history and usage of the library.
+  
+- **The joy of React+Redux with Elixir/OTP**  
+  https://limenius.com/elixir-otp-react-redux/  
+  Covers building a Redux-based client that receives update messages from an Elixir server.
+  
+- **Reslice - Yet Another Way of Managing Scale in React and Redux**  
+  https://medium.com/@mike.es6.programmer/reslice-yet-another-way-of-managing-scale-in-react-and-redux-223971139d6b  
+  Discusses the Reslice toolkit, how it wraps up Redux+Reselect+React-Redux, and how it differs from a standard React+Redux architecture.
+  
+- **"How to deal with dumb Redux views that import containers?"**  
+  https://www.reddit.com/r/javascript/comments/7eavyx/how_to_deal_with_dumb_redux_views_that_import/  
+  Interesting discussion on ways to organize nested Redux-connected components for reusability.
+  
+- **Introducing Redux Box**  
+  https://medium.com/@anish000kumar/introducing-redux-box-99e3d2134ab6  
+  Discussion of a library for generating Redux application modules.
+  
+- **Redux for Chrome Extensions**  
+  https://robots.thoughtbot.com/redux-for-chrome-extensions  
+  A detailed look at how Redux can fit into the Chrome extension architecture

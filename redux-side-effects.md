@@ -1,7 +1,7 @@
 ### Redux Side Effects
 
 
-#### Basic Concepts and Thunks
+#### Basic Concepts
 
 - **Stack Overflow: Dispatching Redux Actions with a Timeout**  
   http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559  
@@ -27,13 +27,20 @@
   https://anyperk.engineering/im-lauren-and-i-m-a-frontend-apprentice-here-at-anyperk-a1a40106d231  
   A quick introduction to some of the libraries that can be used to manage asynchronous behavior in Redux.
   
+
+#### Thunks
+
+- **What the heck is a "thunk"?**  
+  https://daveceddia.com/what-is-a-thunk/  
+  A quick explanation for what the word "thunk" means in general, and for Redux specifically.
+
+- **Thunks in Redux: The Basics**  
+  https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60  
+  A detailed look at what thunks are, what they solve, and how to use them.
+  
 - **A Dummy's Guide to Redux and Thunk in React**  
   https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3  
   A tutorial that shows how to take a React component that does its own data fetching, and rework it to use accept data from Redux and use a thunk action creator instead.
-  
-- **What the heck is a "thunk"?**  
-  https://daveceddia.com/what-is-a-thunk/  
-  A quick explanation for what the word "thunk" means in general, and for Redux specifically..
   
 - **Understanding how redux-thunk works**  
   https://medium.com/@gethylgeorge/understanding-how-redux-thunk-works-72de3bdebc50  
@@ -50,6 +57,14 @@
 - **Returning promises from Redux action creators**  
   https://medium.com/collaborne-engineering/returning-promises-from-redux-action-creators-3035f34fa74b  
   Shows how returning a promise from a thunk action creator allows the caller to chain off the promise and execute code after the action creator is complete.
+  
+- **ReactCasts #10: Redux Thunk Tricks**  
+  https://www.youtube.com/watch?v=xihoZZU0gao  
+  An excellent screencast that covers three useful tips for use of redux-thunk: thunk return values, multi-dispatch, and when to use `getState`
+  
+- **Softly, Softly, Catch-ee Thunk-y**  
+  https://reergymerej.github.io/blog/redux/2017/12/16/thunk-promises.html  
+  Thoughts on how to handle errors inside of thunks, and why you shouldn't end a thunk by catching thrown errors.
   
   
 #### Side Effect Approach Comparisons
@@ -99,10 +114,6 @@
   http://blog.jakegardner.me/redux-thunk-vs-saga/  
   A couple quick examples showing how to use thunks and sagas for the same task
   
-- **ReactCasts #10: Redux Thunk Tricks**  
-  https://www.youtube.com/watch?v=xihoZZU0gao  
-  An excellent screencast that covers three useful tips for use of redux-thunk: thunk return values, multi-dispatch, and when to use `getState`
-  
 - **Redux Thunks Dispatching Other Thunks - Discussion and Best Practices**  
   https://medium.com/@talkol/redux-thunks-dispatching-other-thunks-discussion-and-best-practices-dd6c2b695ecf  
   Some excellent thoughts on when it's okay to have a thunk dispatch another thunk, and other possible approaches.
@@ -118,6 +129,22 @@
 - **"Redux and API/fetch calls. How do you handle them?**  
   https://twitter.com/rem/status/888361414070501376  
   A Twitter poll asking about people's preferences for handling async work in Redux.  The replies are interesting, and show a very wide variety of choices being used.
+  
+- **Understanding redux-saga: from action creators to sagas**  
+  https://blog.logrocket.com/understanding-redux-saga-from-action-creators-to-sagas-2587298b5e71  
+  Some short examples comparing implementations of the same fetching logic inside a component, using redux-thunk, and using redux-saga.
+  
+- **Polling with Redux**  
+  https://bigbitecreative.com/polling-with-redux/  
+  Compares implementations of a polling loop between redux-saga and redux-observable
+  
+- **Redux-Saga vs Redux-Observable**  
+  https://hackmd.io/s/H1xLHUQ8e  
+  Some notes comparing sagas and observables, including "mental models", side-by-side comparison implementations of tasks like fetching / sequencing / cancelation, and more.
+  
+- **Redux Sagas, Observables, oh my**  
+  https://spectrum.chat/thread/2e738f7a-b385-4120-aff1-5fca9d1a6f34  
+  An extensive discussion thread that compares the relative uses cases and merits of redux-saga and redux-observable
   
 
 #### Sagas
@@ -194,10 +221,10 @@
   http://formidable.com/blog/2017/javascript-power-tools-redux-saga/  
   http://formidable.com/blog/2017/composition-patterns-in-redux-saga/  
   http://formidable.com/blog/2017/real-world-redux-saga-patterns/  
-  A fantastic series that the concepts, implementation, and benefits behind Redux-Saga, including how ES6 generators are used to control function flow, how sagas can be composed together to accomplish concurrency, and practical use cases for sagas.
+  A fantastic series that teaches the concepts, implementation, and benefits behind Redux-Saga, including how ES6 generators are used to control function flow, how sagas can be composed together to accomplish concurrency, and practical use cases for sagas.
   
 - **Managing Side Effects with Redux Saga: A Primer**  
-  https://www.sigient.com/blog/managing-side-effects-with-redux-saga-a-primer-1  
+  http://web.archive.org/web/20161112151214/https://www.sigient.com/blog/managing-side-effects-with-redux-saga-a-primer-1  
   Looks at how side effects complicate testing, and how sagas use descriptions of side effects to make testing easier.  Also looks at how sagas fit into a Redux application architecture.
   
 - **Exploring Redux Sagas**  
@@ -246,21 +273,87 @@
   https://medium.com/rumors/redux-firebase-and-the-saga-in-between-c2bd5adf6de1  
   Discussion and examples of how to use sagas to simplify and generalize interaction with Firebase in a Redux app.
   
+- **When should I use a saga?**  
+  https://medium.com/@felixclack/when-should-i-use-a-saga-708cb3c75e9a  
+  Some quick rules of thumb for determining if building a saga is a good choice for a given feature.
   
+- **Redux Saga: the Viking way to manage side effects**  
+  https://www.slideshare.net/nachomartin/redux-sagas-react-alicante  
+  A comprehensive slideset that covers many aspects of sagas, from basic concepts to use with complex workflows.
   
-#### Other Side Effect Approaches
+- **Detecting state changes with Redux-Saga**  
+  https://goshakkk.name/detect-state-change-redux-saga/  
+  Shows a simple but useful technique for running saga behavior based on state changes rather than just dispatched actions.
+  
+- **Common patterns with Redux-Saga**  
+  https://engineering.universe.com/common-patterns-with-redux-saga-ed68f89dfecf  
+  Examples of useful patterns for sagas, including running multiple requests in parallel, using the `race` keyword to time out requests, and using sagas to manage a queue of events.
+  
+- **States and React: step-by-step user interaction with state machines**  
+  https://sandstorm.de/de/blog/post/states-and-react-step-by-step-user-interaction-with-state-machines.html  
+  Demonstrates managing "snackbar" popup notifications using sagas to show and hide the popups
+  
+- **Taming Redux with Sagas**  
+  https://objectpartners.com/2017/11/20/taming-redux-with-sagas/  
+  A good overview of Redux-Saga, including info on generator functions, use cases for sagas, using sagas to deal with promises, and testing sagas.
+  
+- **Learning Redux Saga: Event Channels with Web Midi** 
+  https://medium.com/@joeltbond/learning-redux-saga-event-channels-29dee438fd7b  
+  Demonstrates using sagas to interact with the Web MIDI API
+  
+- **May Cause Side Effects: How to Implement Redux Sagas as Middlewares**  
+  https://www.javascriptjanuary.com/blog/may-cause-side-effects-how-to-implement-redux-sagas-as-middleware  
+  An extensive article that first implements async functionality with thunks, then walks through how sagas work and refactors the logic to use sagas instead.
+  
+
+#### Observables
 
 - **Epic Middleware in Redux**  
   https://medium.com/@kevinsalter/epic-middleware-in-redux-e4385b6ff7c6  
   Discussion and examples of using Redux-Observable and RxJS to create "epics" which can transform actions.
-  
-- **Better async Redux**  
-  https://blog.scottnonnenberg.com/better-async-redux-i18n-and-node-js-versions/  
-  Comparisons and examples of using Redux-Loop for declarative side effects
-  
+
 - **Action Streams and Redux**  
   https://medium.com/@markusctz/action-streams-and-redux-77f8ac99c2e9  
   Examples of how Redux-Observable can simplify complex async logic
+  
+- **Using redux-observable to handle asynchronous logic in Redux**  
+  https://medium.com/dailyjs/using-redux-observable-to-handle-asynchronous-logic-in-redux-d49194742522  
+  An extended post that compares a thunk-based implementation of handling a line-drawing example vs an observable-based implementation.
+  
+- **Redux Observable to the rescue**  
+  https://medium.com/@daslusan/redux-observable-to-the-rescue-b27f07406cf2  
+  A quick comparison of writing some complex AJAX-related logic as a thunk and with redux-observable, and some of the benefits of writing the code using observables.
+  
+- **Using redux-observable for asynchronous actions**  
+  https://medium.com/imersotechblog/using-redux-observable-for-asynchronous-actions-1afb31cbc01c  
+  Looks at possible complexities in handling async requests, and how redux-observable can be used to help handle complex async behavior.
+  
+- **Reactive Redux State with RxJS**  
+  https://ivanjov.com/reactive-redux-state-with-rxjs/  
+  Describes the concept of "Reactive PRogramming" and the RxJS library, and shows how to use redux-observable to fetch data, along with examples of testing.
+  
+- **Creating and Testing a D3/React Game with Redux-Observable**  
+  https://medium.com/@eric.hulburd.af/creating-and-testing-a-d3-react-game-with-redux-observable-d97f2155421c  
+  A detailed look at the concepts and usage of redux-observable.  Implements an example game that's built to demonstrate usage in a more meaningful application, and shows how to test epics.
+  
+- **Timing of reducing Actions with Redux-Observable**  
+  https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/  
+  Breaks down the sequence of behavior when actions are dispatched, how Redux-Observable interacts with that sequence, and gives examples of epics dispatching actions synchronously and asynchronously.
+  
+- **Streaming Redux state as an Observable with RxJS**  
+  https://dev.to/fahad19/streaming-redux-state-as-an-observable-with-rxjs-5f48  
+  Examples of how to construct an Observable stream that subscribes to the Redux store state
+
+- **You Aren't Using Redux with Observables Enough**  
+  https://medium.com/@jacobp100/you-arent-using-redux-with-observables-enough-b59329c5a3af  
+  Shows how to use the Redux store as the source for an observable stream, and gives examples of RxJS observable streams that toggle music player behavior and handle async requests that need to be canceled.
+  
+  
+#### Other Side Effect Approaches
+
+- **Better async Redux**  
+  https://blog.scottnonnenberg.com/better-async-redux-i18n-and-node-js-versions/  
+  Comparisons and examples of using Redux-Loop for declarative side effects
   
 - **A simplified approach to calling APIs with Redux**  
   http://www.sohamkamani.com/blog/2016/06/05/redux-apis/  
@@ -277,3 +370,15 @@
 - **How to make your React app fully functional, fully reactive, and able to handle all those crazy side effects**  
   https://medium.freecodecamp.org/how-to-make-your-react-app-fully-functional-fully-reactive-and-able-to-handle-all-those-crazy-e5da8e7dac10  
   A lengthy look at Cycle.js and the redux-cycles library, with plenty of diagrams to illustrate how it handles data flow.
+ 
+- **Testing for Race Conditions with Redux**  
+  https://paulgray.net/race-conditions-in-redux/  
+  Examples of how to write reducer logic to handle multiple async responses that could return out of order.
+  
+- **Building a React/Redux/Elm Bridge**  
+  https://medium.com/javascript-inside/building-a-react-redux-elm-bridge-8f5b875a9b76  
+  Discusses various way to integrate React, Redux, and Elm together, including a Redux middleware that talks to Elm.
+  
+- **Reacting to ProgressEvents with Redux**  
+  https://medium.com/@andersonmcook/reacting-to-progressevents-with-redux-355ba021d336  
+  Demonstrates using the Redux-Logic library and RxJS to handle browser ProgressEvents

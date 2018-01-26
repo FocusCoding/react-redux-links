@@ -10,6 +10,10 @@
   http://andrewhfarmer.com/how-to-style-react/  
   An excellent overview of the four major ways to deal with styles in React, and what the various tools are.  Includes a decision tree to help you decide what to use.
   
+- **Understand the React Styling Paradigms**  
+  http://jsramblings.com/2017/09/22/understand-the-react-styling-paradigms.html  
+  An excellent, very readable summary of the three main ways to deal with styles in React (plain CSS, CSS modules, and CSS-in-JS).  Lists some pros and cons for each one, and points to some additional resources for learning about them.
+  
 - **CSS in JS**  
   http://blog.vjeux.com/2014/javascript/react-css-in-js-nationjs.html  
   Christopher Chedeau's classic talk that inspired the "CSS in JS" revolution
@@ -25,6 +29,32 @@
 - **U&I With React**  
   https://github.com/FarhadG/ui-react  
   A free online book that teaches how to modular, extendable, and scalable component-based UIs.  Covers best practices, and techniques like CSS preprocessors, CSS modules, inline styles, and more.  Chapters available to read for free on Github, and the Leanpub book can be picked up for free as well.
+  
+- **All You Need To Know About CSS-in-JS**  
+  https://medium.com/@wesharehoodies/all-you-need-to-know-about-css-in-js-984a72d48ebc  
+  A clear summary of the differences between "inline styles" and "CSS-in-JS", the pros and cons of using CSS-in-JS, and quick examples of using some of the most popular CSS-in-JS libraries.
+  
+- **The CSS Holy War & How To Think Beyond Dogma / A Brief History of CSS-in-JS: How We Got Here and Where We're Going**  
+  https://medium.com/gitconnected/the-css-holy-war-how-to-think-beyond-dogma-e2c67692d409  
+  https://medium.com/gitconnected/a-brief-history-of-css-in-js-how-we-got-here-and-where-were-going-ea6261c19f04  
+  A pair of articles that look at the history of CSS, discuss the problems it tries to solve, 
+  and describe the use of CSS-in-JS as a way to help solve certain use cases in today's apps.
+  
+- **Four ways to style React components**  
+  https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822  
+  Quick examples of plain CSS, CSS modules, inline styles, and the styled-components library.
+  
+- **The best "styling in React" tutorial you've ever seen**  
+  https://blog.logrocket.com/the-best-styling-in-react-tutorial-youve-ever-seen-676f1284b945  
+  A comparison of how to style an application using inline styles, the styled-components library, and CSS modules.  Has some good explanations of how each approach works.
+  
+- **CSS-in-JS 101: All you need to know**  
+  https://github.com/stereobooster/css-in-js-101  
+  An extensive look at different ways to handle CSS in React, with pros and cons, techniques for optimizing CSS, and comparisons of different CSS-in-JS libraries.
+  
+- **Styling React**  
+  https://survivejs.com/react/advanced-techniques/styling-react/  
+  An overview of the various approaches for styling React applications and components, and some of the problems each approach tries to solve.
   
 
 #### Components and Styling
@@ -72,6 +102,10 @@
   https://medium.com/geckoboard-under-the-hood/how-we-made-our-product-more-personalized-with-css-variables-and-react-b29298fde608  
   A walkthrough of how to build a themeable application using React components that update CSS variables for dynamic styles
   
+- **Styling your React app for beginners**  
+  https://medium.com/@dylan.broadbridge/styling-your-react-app-for-beginners-f6b39779019b  
+  Examples of basic CSS usage in a CRA-based application, including importing CSS files and use of inline styles in components for layout.
+  
   
 #### JS-Based Approaches
   
@@ -110,6 +144,19 @@
 - **Should I use CSS-in-JS with React?**  
   https://reactarmory.com/answers/should-i-use-css-in-js  
   Some opinionated thoughts on the pros and cons of using CSS-in-JS approaches, including concerns about possibly security issues.
+  
+- **Writing a CSS-in-JS Library from Scratch**  
+  https://medium.com/@tkh44/writing-a-css-in-js-library-from-scratch-96cd23a017b4  
+  The author of the Emotion library shows how to build a simple CSS-in-JS library, to help illustrate how they work.
+  
+- **CSS-in-JS**  
+  https://gist.github.com/threepointone/9f87907a91ec6cbcd376dded7811eb31  
+  First in a series of posts from Sunil Pai, author of the Glamor library.  Explains the basic concepts of handling CSS values as JS objects and arrays.
+  
+  
+- **Things to consider when choosing a React styling framework**  
+  http://jsramblings.com/2017/10/17/things-to-consider-when-choosing-a-react-styling-framework.html  
+  Helpful suggestions for things to compare between different styling libraries, such as how the styles are applied, syntax used, and feature support
   
   
 #### Style Libraries
@@ -150,13 +197,40 @@
   https://medium.com/@tkh44/emotion-ad1c45c6d28b  
   The author of the Emotion library gives an overview of its principles, benchmarks, and uses.
 
+- **With styled-components into the future**  
+  https://medium.com/styled-components/with-styled-components-into-the-future-d1d917e7c22c  
+  A talk transcript that discusses the history and future direction of the Styled-Components library, including how it works, improvements in v2, and plans for interoperability between CSS-in-JS libraries.
   
+- **The performance of styled React components**  
+  http://blog.primehammer.com/2017/09/27/the-performance-of-styled-react-components/  
+  Benchmarks comparing size, build speed, and other aspects of different CSS-in-JS libraries.
+  
+- **Structuring our Styled Components**  
+  https://tech.decisiv.com/structuring-our-styled-components-part-i-2bf21fa64b28  
+  Discusses applying the Block-Element-Modifier styling structure approach to use of the styled-components library, with examples.
+  
+- **Styled-Components Nitty-Gritty**  
+  https://blog.elpassion.com/styled-components-nitty-gritty-2d74b8690ef8  
+  An introduction to how to use the styled-components library, the problems that it solves, and how it works internally
+  
+- **A Field Guide to CSS-in-JS**  
+  https://medium.com/@wonderboymusic/a-field-guide-to-css-in-js-f7cbd9ed79a7  
+  Looks at how to use the styled-components and emotion libraries, including syntax, theming, variables, classname generation, and more.
+  
+- **CSS-in-JS Roundup: Styling React Components**  
+  https://alligator.io/react/css-in-js-roundup-styling-react-components/  
+  A high-level comparison of 15 different CSS-in-JS libraries
+  
+- **Migrating to styled-components cheatsheet**  
+  http://jsramblings.com/2017/10/29/migrating-to-styled-components-cheatsheet.html  
+  Some helpful tips for moving a project from vanilla CSS to the styled-components library
   
   
 #### Techniques and Examples
 
 - **How to build animated microinteractions in React**  
-  https://medium.freecodecamp.com/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8  Examples of various ways to create small animations to give feedback as the user interacts with components
+  https://medium.freecodecamp.com/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8  
+  Examples of various ways to create small animations to give feedback as the user interacts with components
   
 - **Create That Component**  
   https://medium.com/taitounited/create-that-component-1-7a2267bc2833  

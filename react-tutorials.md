@@ -12,21 +12,26 @@
   http://blog.isquaredsoftware.com/2017/02/presentation-react-redux-intro/  
   An up-to-date HTML slideshow that introduces React and Redux, discusses why they help make applications easier to write via declarative code and predictable data flow, and demonstrates their basic concepts and syntax.  Includes several interactive React component examples.
   
+- **The Beginner's Guide to ReactJS**  
+  https://egghead.io/courses/the-beginner-s-guide-to-reactjs  
+  A free video course with short lessons that explain key React concepts, including using `React.createElement` and JSX, conditional rendering, forms, styling, lists, HTTP requests, and deploying a React app.
+  
 - **30 Days of React**  
   https://www.fullstackreact.com/30-days-of-react/  
   A tutorial series that walks you through how to use React, from the ground up, in 30 bite-size articles covering everything from "What is React?" to data management to testing and deployment.
   
 - **Learn React From Your Browser: Introducing React**  
   https://reactarmory.com/guides/learn-react-by-itself  
-  An excellent tutorial that teaches React concepts from basic principles without buzzwords or build tools, using interactive editable examples.  (This is a rewritten and improved version of the "Learn Raw React" tutorial.)  
+  https://reactarmory.com/examples/hello-world/jsx-hello-world  
+  An excellent tutorial that teaches React concepts from basic principles without buzzwords or build tools, using interactive editable examples.  (This is a rewritten and improved version of the "Learn Raw React" tutorial.)  Now includes an interactive editor to let you try working with React code there in the browser.
   
 - **Learn Raw React**  
   http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/  
   A ground-up React tutorial that leaves out any other related "modern" technologies,  Very recommended if you want to skip the buzzwords and acronyms.
   
 - **React Fundamentals**  
-  https://tylermcginnis.com/courses/react-fundamentals/
-  An online course from the React Training company.  Covers key aspects of Javascript, React concepts as of React 15.5, React Router v4, and building and deploying an application.
+  https://tylermcginnis.com/courses/react-fundamentals/  
+  An online course from an excellent React trainer.  Covers key aspects of Javascript, React concepts as of React 16, React Router v4, and building and deploying an application.
   
 - **React Express**  
   http://www.react.express/  
@@ -114,27 +119,35 @@
   
 - **React by Example**  
   https://medium.com/front-end-hacking/react-by-example-part-1-76d3e2137cf4  
-  https://medium.com/front-end-hacking/react-by-example-part-2-340582c6f552  
-  https://medium.com/@johntucker_48673/react-by-example-part-3-f825444bc1d8  
-  https://medium.com/@johntucker_48673/react-by-example-part-4-5d32168db362  
-  https://medium.com/@johntucker_48673/react-by-example-part-5-e1716e69dacc  
-  https://medium.com/@johntucker_48673/react-by-example-part-6-8c71dda057ac  
-  https://medium.com/@johntucker_48673/react-by-example-part-7-8dc97b57f668  
   A multi-part series that illustrates core React concepts via a series of small example repos, with explanations of the source and concepts in the articles.
   
 - **React.js for the Visual Learner**  
   https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-1-what-is-this-all-about-a0d28cfd33c6  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-2-what-is-react-and-why-is-it-cool-d1f9bac69a63  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-3-building-our-houses-295c43304b18  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-4-our-first-village-8b44427d4762  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-5-additions-to-our-houses-7e67ed97b62b  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-6-building-our-first-project-5429f1afde98  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-7-building-our-first-user-interface-c61e9a22be2f  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-8-implementing-react-router-6109671db576  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-9-chat-bot-demo-using-firebase-637445703c74  
-  https://medium.com/coding-artist/react-js-for-the-visual-learner-chapter-10-reacting-to-what-weve-learned-633ac18469ba  
   A 10-part series that explains React (and many web dev concepts) from the ground up, with simple terms and lots of metaphors.  Aimed at absolute beginners.
 
+- **Intro to React**  
+  https://www.writesoftware.org/topic/react  
+  A short tutorial series that introduces basic React concepts like JSX, components, props, state, and events.
+  
+- **Everything You Should Know About React: The Basics You Need To Start Building**  
+  https://medium.freecodecamp.org/everything-you-need-to-know-about-react-eaedf53238c4  
+  A comprehensive tutorial that covers topics like components, rendering, JSX, state, event handling, async behavior, props, and refs.  
+  
+- **Introduction to React**  
+  http://ivanjurina.com/2017/11/19/introduction-to-react/  
+  Useful notes and info on the basics of React, from someone who just learned React.
+  
+- **React Holiday**  
+  https://react.holiday/  
+  A series of short lessons that teach core React concepts, each with an interactive sandbox example to play with.
+  
+- **The Beginner's Guide to React**  
+  https://egghead.io/courses/the-beginner-s-guide-to-reactjs  
+  A free video series from Kent C Dodds that teaches React fundamentals.  Each lesson's sample code is a simple index.html file so you can focus on learning React, without distractions from other tools.
+  
+- **Learning React**  
+  https://withouttheloop.com/articles/2018-01-03-react-1/  
+  A multi-part series that tries to bridge the gap between a "Hello World" example and a production-ready app, by showing how a React app is built up from first principles and explaining why each new piece is necessary.  Covers topics like basic components, Redux, React-Router, AJAX, and more.
   
 
 #### React Concept Overviews
@@ -167,6 +180,24 @@
   https://medium.com/deepscan/a-few-things-every-new-react-developer-should-know-part-1-93940e11800a  
   https://medium.com/deepscan/a-few-things-every-new-react-developer-should-know-part-2-913e089e8fc2  
   
+- **An Introduction to React and the Surrounding Ecosystem in 2017**  
+  https://www.youtube.com/watch?v=qDTQzIzqodw  
+  A video presentation that describes some of the business case and benefits of using React, introduces React component concepts, and discusses some of the common tools in the React ecosystem.
+  
+- **React Interview Questions**  
+  https://github.com/Pau1fitz/react-interview  
+  A large list of questions on React concepts that might pop up in an interview, with answers.
+  
+- **A React Christmas**  
+  https://react.christmas/  
+  A series of short posts that look at specific aspects of using React, including using Create-React-App, testing code, using Fragments, component composition, and much more.
+  
+- **6 React Development Tips for Beginners**  
+  https://www.codementor.io/canberkmorelli/i-wish-i-knew-these-before-diving-into-react-fvionauhk  Several useful tips for understanding how React works, including behavior of `setState` and component lifecycle methods.
+  
+- **React - Common Questions**  
+  https://academind.com/learn/react/react-q-a/  
+  An article and accompanying video that explain answers to common questions about React, including whether a complex project setup is necessary, different ways to define components, ways to style React apps, immutability, using React with various backends, and more.
   
   
 
@@ -271,7 +302,7 @@
   Demonstrates building a small app that displays info on a Google map
   
 - **React Daily UI**  
-  http://codepen.io/collection/DoLZRm/
+  http://codepen.io/collection/DoLZRm/  
   https://www.fullstackreact.com/react-daily-ui/001-sign-up-form/  
   https://www.fullstackreact.com/react-daily-ui/002-checkout/  
   https://www.fullstackreact.com/react-daily-ui/003-landing-page/  
@@ -322,7 +353,8 @@
   Demonstrates building a small app that handles payment information using the Stripe service
   
 - **Let's Learn: Higher Order Components and Websockets**  
-  https://medium.com/let-s-learn/lets-learn-higher-order-components-and-websockets-83a18d36c0d1   Examples that show how to create reusable components that manage a websocket connection and subscriptions to specific events.
+  https://medium.com/let-s-learn/lets-learn-higher-order-components-and-websockets-83a18d36c0d1   
+  Examples that show how to create reusable components that manage a websocket connection and subscriptions to specific events.
   
 - **Make Your Own Charts in React Without a Charting Library**  
   https://kyleshevlin.com/make-your-own-charts-in-react-without-a-charting-library-part-1/  
@@ -351,6 +383,34 @@
 - **Build a Metronome in React**  
   https://daveceddia.com/build-metronome-react/  
   An easy-to-follow, step-by-step tutorial that demonstrates key concepts like loading data, initializing state, and handling input changes.
+  
+- **Microservices with Docker, Flask, and React**  
+  https://testdriven.io/part-one-intro/  
+  A large multi-part tutorial covers setting up a dev environment using Docker containers, building a REST API server with the Python Flask framework, building a UI with React, and deploying it all to Amazon EC2.
+  
+- **Create a Spreadsheet using React**  
+  https://www.writesoftware.org/tutorial/react-spreadsheet  
+  An excellent tutorial that shows how to build a miniature spreadsheet app using React
+  
+- **Developing modern offline apps with ReactJS, Redux, and Electron**  
+  https://blog.codecentric.de/en/2017/10/developing-modern-offline-apps-reactjs-redux-electron-part-1/  
+  An ongoing multi-part series that covers using React to build an Electron app, including discussion of architectural decisions.
+  
+- **MERN Stack Tutorial**  
+  https://appdividend.com/2017/06/28/mern-stack-tutorial/  
+  An extensive full-stack app tutorial that covers building an app with React on the client and Mongo+Express on the back end.
+  
+- **Build a realtime PWA with React**  
+  https://blog.pusher.com/build-a-realtime-pwa-with-react/  
+  Covers building a Progressive Web App that shows crypto-currency pricess, using Create-React-App and the Pusher service.
+  
+- **Getting Started with React: Build a Cryptocurrency Ticker**  
+  https://sabe.io/tutorials/getting-started-with-react  
+  A tutorial that demonstrates how to build a simple real-time display of cryptocurrency prices.
+  
+- **Creating your first MERN stack application**  
+  https://blog.cloudboost.io/creating-your-first-mern-stack-application-b6604d12e4d3  
+  Shows how to build an expense manager application, using create-react-app as the basis for the front end.
   
   
 #### Paid Courses and Books
@@ -381,6 +441,11 @@ Also see the course sites listed in the [Community Resources](community-resource
 - **The Road to Learn React**  
   http://www.robinwieruch.de/the-road-to-learn-react/  
   A pay-what-you-want ebook that teaches a good foundation for React itself, including React component patterns, working with data (fetching, sorting, and filtering), unit testing, and more.  The author's blog posts are excellent, and this book is definitely recommended.
+  
+- **Taming the State in React**  
+  https://www.robinwieruch.de/learn-react-redux-mobx-state-management/  
+  https://roadtoreact.com/course-details?courseId=TAMING_THE_STATE  
+  A book and set of course material from the author of "The Road to Learn React", covering state management with setState, Redux, and MobX.  
   
 - **Learn Pure React**  
   https://daveceddia.com/learn-pure-react/  

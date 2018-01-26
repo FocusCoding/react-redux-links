@@ -1,5 +1,7 @@
 ### React Deployment
 
+#### Applications
+
 - **Understanding React deployment**  
   https://medium.com/@baphemot/understanding-react-deployment-5a717d4378fd  
   An excellent overview of the basic steps needed to deploy a React app, including solutions for common problems such as routing producing 404s and changes not showing up properly.
@@ -41,3 +43,25 @@
   https://daveceddia.com/multiple-environments-with-react/  
   Discusses strategies for handling deployments to dev/staging/prod-type environments, including configuration of API endpoints and feature flags.
   
+- **Deploy a React app with SASS using Nginx**  
+  http://zabana.me/notes/build-deploy-react-app-with-nginx.html  
+  Covers several important notes for adding SASS to an ejected CRA app, creating a deploy step using rsync, and setting up the Nginx web server to serve the app.
+  
+- **How to deploy a React application: an in depth overview of various options to deploy**  
+  https://codebrahma.com/deploy-react-application-depth-overview-various-options-deploy/  
+  A detailed look at what deployment for production means, what files are involved, how to properly build an app for production, and places to host a react app.
+  
+
+#### Libraries
+
+- **Creating react-editables: How to build a set of reusable React components**  
+  https://medium.com/@niwaa/creating-react-editables-how-to-build-a-set-of-reusable-react-components-with-an-hoc-and-write-7a685947a992  
+  Looks at the steps needed to create a set of reusable React components and publish them to NPM.  Includes extended thoughts on component design for reusability.
+
+- **Adventures in creating a React component library with Create React App and TypeScript**  
+  https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87  
+  Walks through the process of using the TS+CRA starter kit as a baseline for building and publishing a component library.
+  
+- **A guide to building a React component for NPM**  
+  https://medium.com/@markus.s.englund/a-guide-to-building-a-react-component-for-npm-68f03b314753  
+  A high-level overview of things to consider when publishing a React-based component library, including accessibility, documentation, naming, and marketing

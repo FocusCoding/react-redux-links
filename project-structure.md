@@ -69,7 +69,7 @@
   Another look at structuring code, based on business logic, data domains, and reusability.
   
 - **When a good plan comes together: React project structure for scaling**  
-  http://thereactionary.net/when-a-good-plan-comes-together-react-project-structure-for-scaling/  
+  http://web.archive.org/web/20170706123441/http://thereactionary.net/when-a-good-plan-comes-together-react-project-structure-for-scaling/    
   More discussion of tradeoffs in various structure approaches.
   
 - **Structuring and Organizing the React Components Directory**  
@@ -87,7 +87,19 @@
   
 - **Decoupling Hierarchies for Maintainable Code**  
   https://medium.com/altschool-engineering/decoupling-hierarchies-for-maintainable-code-b13c24b2f047  
+  Some very interesting thoughts on how component structure, data flow, and folder structure can interact with each other.
   
 - **Writing Scalable React Apps with the Component Folder Pattern**  
   https://medium.com/styled-components/component-folder-pattern-ee42df37ec68  
   Describes a specific variation on "feature folders" that puts all files for a given component in a separate folder, as well as an approach for providing configurable component rendering with default behavior as a fallback.
+
+- **Fractal: A React app structure for infinite scale**  
+  https://hackernoon.com/fractal-a-react-app-structure-for-infinite-scale-4dab943092af  
+  
+- **Domain directory structure for React apps - why it's worth trying**  
+  https://tech.offgrid-electric.com/domain-directory-structure-for-react-apps-why-its-worth-trying-b3855ee77a1e  
+  Discusses experience with the "A Better File Structure" approach, and gives advice on best practices for import paths, creating sub-domains, and more.
+  
+- **The 100% correct way to structure a React app (or why there's no such thing**  
+  https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed  
+  An extensive set of pragmatic thoughts on good practices for React project structure.  Tries to quantify time spent on activities like creating new files and switching editor tabs, and gives some opinions on which patterns are more useful.

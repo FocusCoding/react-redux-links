@@ -9,6 +9,10 @@ My [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
   https://facebook.github.io/react/docs/advanced-performance.html  
   https://facebook.github.io/react/docs/perf.html  
   The React doc pages on performance.  Describes the core concepts, including shouldComponentUpdate, using immutable data, and the Performance API for benchmarking.
+    
+- **React, Inline Functions, and Performance**  
+  https://cdb.reacttraining.com/react-inline-functions-and-performance-bdff784f5578  
+  An excellent article Ryan Florence that pushes back against the "creating functions in render is slow" conventional wisdom in the React community.  This article is a must-read discussion on React performance.
   
 - **Performance Engineering with React**  
   http://benchling.engineering/performance-engineering-with-react/  
@@ -102,7 +106,8 @@ My [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
   Tips on using the new browser devtools integration capability in React 15.4 to track component performance.
   
 - **React Snippets: Debug Component performance with ES7 Annotations**  
-  https://www.neos.io/blog/react-snippets-debug-component-performance-with-es7-annotations.html  Demonstrates using a custom decorator to wrap components and log information on when and why components re-rendered
+  https://www.neos.io/blog/react-snippets-debug-component-performance-with-es7-annotations.html  
+  Demonstrates using a custom decorator to wrap components and log information on when and why components re-rendered
   
 - **How to Benchmark React Components: The Quick and Dirty Guide**  
   https://medium.com/code-life/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c  
@@ -142,7 +147,9 @@ My [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
   
 - **Optimizing React Rendering**  
   https://flexport.engineering/optimizing-react-rendering-part-1-9634469dca02  
-  Discusses several aspects of improving React rendering performance, including tips for ensuring your codebase is ready to use `PureComponent`.  Has a link to further discussion on HN.
+  https://flexport.engineering/optimizing-react-rendering-part-2-7b2e9a9ea21f  
+  https://flexport.engineering/ending-the-debate-on-inline-functions-in-react-8c03fabd144  
+  Discusses several aspects of improving React rendering performance, including tips for ensuring your codebase is ready to use `PureComponent`.  Has a link to further discussion on HN.  Part 2 describes how they built a library called `mutation-sentinel` to detect accidental mutations, and Part 3 covers a Babel plugin for optimizing inline functions in render methods.
   
 - **Introducing react-wastage-monitor**  
   https://blog.listium.com/introducing-react-wastage-monitor-404565d679b2  
@@ -167,6 +174,34 @@ My [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links)
 - **When to use Component or PureComponent**  
   https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81  
   Good advice on the potential benefits of using `PureComponent`, as well as several potential downsides or gotchas (such as binding functions in `render()`).
+
+- **The Virtual DOM and its Anti-Patterns**  
+  https://medium.com/riipen-engineering/the-virtual-dom-and-its-anti-patterns-aa4c523d00ed  
+  First in a 3-part series discussing causes of slow components and wasteful rendering.  Later posts will cover ways to optimize Redux usage, and tools to find bottlenecks that can be optimized.
+  
+- **How to greatly improve your React app performance**  
+  https://medium.com/myheritage-engineering/how-to-greatly-improve-your-react-app-performance-e70f7cbbb5f6  
+  Discusses React perf issues like bad `sCU` implementations, changing the DOM too fast, and event/callback usage, with possible solutions.  
+  
+- **React Performance Fixes on Airbnb Listing Pages**  
+  https://medium.com/airbnb-engineering/recent-web-performance-fixes-on-airbnb-listing-pages-6cd8d93df6f4  
+  Excellent practical discussion of actual perf issues that were showing up in Airbnb pages and how they resolved them.  Covers performance recordings, handling initial renders, scrolling, only using component state for values that affect re-rendering, and more.
+  
+- **Debugging React Performance with React 16 and Chrome DevTools**  
+  https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad  
+  Shows how to use the Chrome DevTools to profile React code using performance recordings, including analysis of recordings to track down perf issues.
+  
+- **Demystifying Memory Usage using ES6 React Classes**  
+  https://medium.com/@donavon/demystifying-memory-usage-using-es6-react-classes-d9d904bc4557  
+  A quick look at the memory usage differences between calling `Function.bind` and using the Class Properties syntax, and the readability tradeoffs involved.
+  
+- **How does React decide to re-render a component?**  
+  http://lucybain.com/blog/2017/react-js-when-to-rerender/  
+  An easy-to-read overview of when and why a component will re-render.
+  
+- **Dragging React performance forward**  
+  https://medium.com/@alexandereardon/dragging-react-performance-forward-688b30d40a33  
+  A detailed look at how the react-beautiful-dnd library implemented performance improvements with drastically better results, including avoiding unnecessary renders and DOM reads, applying style updates, virtualizing movement, and using lookup tables. 
   
   
 #### Code Splitting and Progressive Apps
@@ -206,6 +241,26 @@ Also see [Webpack Advanced Techniques](./webpack-advanced-techniques.md)
   https://medium.com/progressive-web-apps/react-progressive-web-apps-part-2-d55c6bd4b316  
   A pair of posts that cover how to set up an initial PWA and check its behavior against best practices, and how to add offline-first behavior to a React+Redux PWA. 
   
+- **What profiling my Universal React-Redux app revealed**  
+  https://medium.com/@darioghilardi/what-profiling-a-universal-react-redux-app-revealed-c5cc4986353c  
+  Discusses using the Chrome DevTools to debug and do CPU profiling of a Node server process that was doing server-side rendering of a React app.
+  
+- **Performance-tuning a React application**  
+  https://medium.com/@joshuawcomeau/performance-tuning-a-react-application-f480f46dc1a2  
+  An excellent case study on improving load time for a small React+Redux app.  Describes use of gzipping, image cropping, lazy loading, and more.
+  
+- **A React and Preact Progressive Web App Performance Case Study: Treebo**  
+  https://medium.com/dev-channel/treebo-a-react-and-preact-progressive-web-app-performance-case-study-5e4f450d5299  
+  An extensive technical deep dive into how Treebo optimized their React application for good performance on mobile devices.
+  
+- **Firebase + React: Optimizing for the Real World**  
+  https://codeburst.io/firebase-react-optimizing-for-the-real-world-4d9edbbd54c5  
+  Describes shrinking a React + Firebase app bundle from 1.7MB to 230KB by switching to smaller alternative packages and analyzing bundle size.
+  
+- **A Pinterest Progressive Web App Performance Case Study**  
+  https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154  
+  A deep dive into how Pinterest optimized their new PWA app, including route chunking, use of babel-preset-env, service workers, and use of normalized Redux state.
+  
   
 #### Immutable Data
 
@@ -218,7 +273,7 @@ Also see [Webpack Advanced Techniques](./webpack-advanced-techniques.md)
   Good comments from an HN thread discussing a React vs Vue benchmark.  A Discord developer talks about several lessons learned, including pros and cons of using Immutable.js, and only rendering elements that are visible.
   
 - **Immutable.js: worth the cost?**  
-  https://medium.com/@AlexFaunt/immutablejs-worth-the-price-66391b8742d4
+  https://medium.com/@AlexFaunt/immutablejs-worth-the-price-66391b8742d4  
   Looks at several pros and cons of using Immutable.js, such as enforced immutability (pro), and major performance problems from calling `toJS()`  frequently (con).
 
 - **React + Redux performance optimization with shouldComponentUpdate**  
@@ -320,3 +375,19 @@ Also see [Webpack Advanced Techniques](./webpack-advanced-techniques.md)
 - **Measuring performance gains - AngularJS to React (with Redux or MobX)**  
   https://medium.com/@guptagaruda/measuring-performance-gains-angularjs-to-react-with-redux-or-mobx-fb221517455  
   A highly detailed article that investigates and benchmarks performance between an Angular 1.x app and equivalent React+Redux and React+MobX apps in a variety of real-world use cases.  Excellently written and researched.
+  
+- **The most unknown Redux performance trick**  
+  https://medium.com/@jidefr/the-most-unknown-redux-performance-trick-986fdfe871fa  
+  Examples of how `connect`'s lesser-known `areStatesEqual` option can be used to skip unnecessary re-renders.
+  
+- **Optimizing Redux Components**  
+  https://medium.com/riipen-engineering/optimizing-redux-components-cbaad062abc7  
+  Discusses Redux-specific perf optimizations, such as avoiding unnecessary work in `mapState` functions, memoization, and advanced comparison function options for `connect`.
+  
+- **React + Redux Performance and the Benchmarks to Prove It**  
+  https://tech.smartling.com/react-redux-performance-and-the-benchmarks-to-prove-it-79b0bc9f25a4  
+  Describes an approach for benchmarking a React+Redux app to understand how much impact performance optimizations actually give.
+  
+- **Redux's Connect function and areStatesEqual Option**  
+  https://medium.com/@ryansperzel/reduxs-connect-function-and-arestatesequal-option-adc97e00ee0  
+  Looks at one of `connect`'s options that can be used to customize comparisons and skip unnecessary `mapState` calls.

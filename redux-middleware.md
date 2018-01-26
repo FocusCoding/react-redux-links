@@ -46,6 +46,18 @@
   http://www.slideshare.net/visualengin/workshop-22-reactredux-m  
   A slideshow that explains how Redux middleware work, with several helpful visualizations
   
+- **Understanding Redux Middleware and Writing Custom Ones**  
+  https://dev.to/imwiss/understanding-redux-middleware-and-writing-custom-ones  
+  Describes the concept of middleware in Redux, possible use cases, and gives an example of writing a middleware to handle caching.
+  
+- **Build your own Redux middleware**  
+  https://blog.campvanilla.com/redux-middleware-basics-getting-started-17dc31c6435c  
+  A good explanation of how middleware fit into the Redux data flow, how middleware are defined, and how to write a simple logging middleware.
+  
+- **Learning Redux Middlewares by Reading Their Source**  
+  https://www.ynonperek.com/2017/08/21/learning-redux-middlewares-by-reading-their-source/  
+  Explores the source code for redux-thunk, redux-promise, and redux-batch-middleware to help understand how middleware work.
+  
 
 #### Middleware Techniques
 
@@ -77,3 +89,23 @@
 - **"Do I always need to return a value from a Redux middleware?"**  
   https://stackoverflow.com/questions/45964129/do-i-always-need-to-return-a-value-from-a-redux-middleware/45964310#45964310  
   My answer to a question about whether middleware should do `return next(action)`.  Short version: yes, always, unless you want to alter expected behavior.
+  
+- **Practical Advanced Redux Webinar: Redux Middleware**  
+  https://www.youtube.com/watch?v=DqWiuvuK_78  
+  A recorded screenshare livestream that discusses the usefulness of Redux middleware, and demonstrates building middleware for fetching data, logging, and throttling.
+  
+- **Redux: Drawing the Lines between Actions and Middleware**  
+  https://michaelwashburnjr.com/redux-actions-middleware/  
+  Compares examples of behavior between thunks and middleware, and discusses when you might want to implement behavior in a middleware.
+  
+- **Redux Middleware and Enhancers**  
+  https://chariotsolutions.com/blog/post/redux-middleware-and-enhancers-getting-redux-to-log-debug-and-process-async-work/  
+  Describes some common Redux middleware and their uses, as well as how to set up the Redux DevTools enhancer for debugging. 
+  
+- **Redux analytics, without middleware**  
+  http://web.archive.org/web/20170617100422/http://blog.reactandbethankful.com/posts/2016/09/27/redux-analytics-without-middleware/  
+  Discusses pros and cons of using middleware for analytics, and shows how to create a store enhancer that wraps `subscribe` to allow providing selectors and callbacks.
+  
+- **How to use Redux middleware to decouple AJAX call?**  
+  http://www.albertgao.xyz/2017/12/07/how-to-use-redux-middleware-to-decouple-ajax-call/  
+  Demonstrates writing a middleware that accepts a plain object description of an HTTP request, and executes the request

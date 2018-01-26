@@ -2,12 +2,24 @@
 
 #### State Types and Data Flow
 
+- **A Visual Guide to State in React**  
+  https://daveceddia.com/visual-guide-to-state-in-react/  
+  Describes what "state" is, what kinds of data should be included into React state, and how state flow relates to component updates.
+  
+- **ReactJS: Props vs State**  
+  http://lucybain.com/blog/2016/react-state-vs-pros/  
+  Explains that "props" are data passed in to a component, while "state" is data managed inside a component.
+
+- **Props vs State**  
+  https://github.com/uberVU/react-guide/blob/master/props-vs-state.md  
+  A quick summary of the differences between "props" and "state" in React components
+
 - **The 5 Types of React Application State**  
   http://jamesknelson.com/5-types-react-application-state/  
   Describes different categories of state: data, communication, control, session, and location
   
 - **"M" and "C" in "MVC"**  
-  https://www.youtube.com/watch?v=fUpkYixd03k
+  https://www.youtube.com/watch?v=fUpkYixd03k  
   https://github.com/jamesknelson/m-and-c-in-mvc-talk  
   James K. Nelson's talk at ReactNext, talking about the multiple categories of state and how controller components can manage them.
   
@@ -30,14 +42,6 @@
 - **Best Practices for Component State in React**  
   http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html  
   Some excellent suggestions and approaches for state handling and structure.
-  
-- **A Visual Guide to State in React**  
-  https://daveceddia.com/visual-guide-to-state-in-react/  
-  Describes what "state" is, what kinds of data should be included into React state, and how state flow relates to component updates.
-  
-- **ReactJS: Props vs State**  
-  http://lucybain.com/blog/2016/react-state-vs-pros/  
-  Explains that "props" are data passed in to a component, while "state" is data managed inside a component.
   
 - **React state management patterns**  
   http://vijayt.com/post/react-state-management-patterns/  
@@ -66,6 +70,14 @@
 - **How to manage or eliminate React state without Redux**  
   http://monicalent.com/blog/2017/07/23/manage-state-in-react/  
   An excellent writeup on techniques you can use to help manage state in React without using Redux, including only using component state for things that are really needed, extracting state management logic, and rethinking when you actually need stateful components.
+  
+- **State management in Javascript**  
+  https://codeburst.io/state-management-in-javascript-15d0d98837e1  
+  Not React-specific, but some excellent general principles for dealing with state overall: represent data uniquely, derive values, define dependencies, and localise state as much as possible.
+  
+- **Three approaches to distribute the state across components in React**  
+  https://engineering.hexacta.com/three-approaches-to-distribute-the-state-across-components-in-react-da4db5a389e0  
+  Looks at three ways to handle state that needs to apply to sibling components: controlling the state in the parent, synchronizing the states, and forcing a different component instance via the `key` prop
 
 
 #### Using `setState`
@@ -102,7 +114,7 @@
   https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b  
   Discusses passing a function to `setState` to perform updates, why that approach is useful, and how that pattern can be used to separate state update logic from component definition
   
-- **Does React have a `setState` problem? / `setState() Gate: Navigating Behavior Confusion**  
+- **Does React have a `setState` problem? / `setState()` Gate: Navigating Behavior Confusion**  
   https://twitter.com/i/moments/842710066826530816  
   https://medium.com/javascript-scene/setstate-gate-abc10a9b2d82  
   Eric Elliott recently posted a tweet saying that `setState` is bad for learners, and advanced devs have learned to avoid it.  That spawned a large Twitter thread arguing the idea.  Elliott later posted an article explaining his concerns in detail.  Some excellent reading and points to consider all around - the "Moments" link includes a few of the tweets, but the whole thread is worth reading.
@@ -122,3 +134,7 @@
 - **Atomic `setState` Updates in React**  
   https://alligator.io/react/getting-atomic-updates-with-setstate/  
   Discusses how the standard object form of `setState` can cause race conditions, while the functional form is more predictable.
+  
+- **`setState` ftw**  
+  https://speakerdeck.com/michelebertoli/setstate-ftw  
+  Slides from Facebook dev Michele Bertoli's talk on how `setState` works, how to use it properly, and useful techniques for working with `setState`.

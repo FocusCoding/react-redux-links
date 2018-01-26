@@ -1,5 +1,9 @@
 ### Redux Techniques
 
+**Related Topics**:
+- [Redux Reducers and Selectors](./redux-reducers-selectors.md)
+- [Redux UI Management](./redux-ui-management.md)
+
 
 #### Debugging
 
@@ -47,271 +51,18 @@
 - **How to treat Errors as first-class citizen in Flux (and Redux)**  
   https://medium.com/@jamiedixon/how-to-treat-errors-as-first-class-citizens-in-flux-and-redux-fca7f3d5c02d  
   Discusses how the FSA structure expects actions to have an optional `error` field, and how to write code that deals with that.
-
-
-#### Reducers
-
-- **Redux Docs: Structuring Reducers**  
-  http://redux.js.org/docs/recipes/StructuringReducers.html  
-  Comprehensive information on writing reducers and structuring data, covering reducer composition, use of `combineReducers`, normalizing data, proper immutable updating, and more.
-
-- **"Reducer composition without slicing state"**  
-  https://www.reddit.com/r/javascript/comments/42ey9e/redux_reducer_composition_without_slicing_state/  
-  Discussion of ways to organize actions and reducer logic
-
-- **Taking Advantage of `combineReducers`**  
-  http://randycoulman.com/blog/2016/11/22/taking-advantage-of-combinereducers/  
-  Examples of using `combineReducers` multiple times to produce a state tree, and some thoughts on tradeoffs in various approaches to reducer logic.
   
-- **The Power of Higher-Order Reducers**  
-  http://slides.com/omnidan/hor#/  
-  A slideshow from the author of redux-undo and other libraries, explaining the concept of higher-order reducers and how they can be used
+- **Redux in Action: Using the Redux DevTools**  
+  https://www.slideshare.net/ManningBooks/redux-in-action-learn-to-manage-and-consolidate-state  
+  Some slides from the authors of the book "Redux in Action", explaining what the Redux DevTools are, how to set them up, and how to use them to view dispatched actions and debug state changes
   
-- **Modifying a Leaf of the Redux State Tree**  
-  http://cmichel.io/modifying-a-leaf-of-the-redux-state-tree/  
-  Some useful observations on how to properly do deep immutable updates.
+- **A user encounters a JavaScript error. You'll never guess what happens next!**  
+  https://hackernoon.com/a-user-encounters-a-javascript-error-youll-never-guess-what-happens-next-dc1a6f725490  
+  A walkthrough for how to capture user page interactions and dispatched Redux actions into a "journey" object that can be sent to the server if an error is detected, allowing a developer to play back the user's behavior for debugging.
   
-- **"How to dynamically load reducers for code splitting in a Redux application?"**  
-  http://stackoverflow.com/questions/32968016/how-to-dynamically-load-reducers-for-code-splitting-in-a-redux-application  
-  Dan Abramov gives a basic exapmle of how to rebuild and replace the root reducer function at runtime
-  
-- **Inject reducer arbitrarily rather than top level for Redux store to replace reducer**  
-  https://medium.com/@jimmy_shen/inject-reducer-arbitrarily-rather-than-top-level-for-redux-store-to-replace-reducer-fdc1060a6a7  
-  A quick example of the basic approach to injecting additional reducers at runtime
-  
-- **State Snapshots in Redux**  
-  http://kyleshevlin.com/state-snapshots-in-redux/  
-  Describes a useful technique for saving copies of state slices on command, and re-applying those copies at a later point to ensure a known starting point for further actions.
-  
-- **"Problems with Flux"**  
-  http://www.code-experience.com/problems-with-flux/  
-  Discusses the idea of having all state updates for an action listed in one place, vs spread throughout the store.  Written shortly after the release of Redux, but definitely relevant.
-  
-- **Redux Tree**  
-  https://blog.shakacode.com/redux-tree-efc9e3d22d6e  
-  Looks at structuring a reducer/state tree as "branches" and "leaves", and introduces the idea of an "interaction" to encapsulate all related state changes for a given action, with a library to implement the idea.
-  
-- **Reducer composition with Higher Order Reducers**  
-  https://medium.com/@mange_vibration/reducer-composition-with-higher-order-reducers-35c3977ed08f  
-  Some great examples of writing small functions that can be composed together to perform larger specific reducer tasks, such as providing initial state, filtering, updating specific keys, and more.
-  
-- **Using Currying to Compose Reducers**  
-  http://www.guyzissman.com/posts/pipe-reducers/  
-  Some short but helpful examples of how currying functions can be used to reuse reducer logic for similar use cases.
-  
-- **Higher Order Reducers - It just sounds scary**  
-  https://medium.com/@danielkagan/high-order-reducers-it-just-sounds-scary-2b9e5dbfc705  
-  Explains how reducers can be composed like Lego bricks to create reusable and testable reducer logic.
-  
-- **Functional Redux Reducers with Ramda**  
-  https://alligator.io/react/functional-redux-reducers-with-ramda/  
-  Shows how to write a somewhat complex Redux reducer using only composition of functions from the Ramda library
-  
-- **Combine Redux reducers like a Tetris ninja**  
-  https://engineering.legalstart.fr/combine-redux-reducers-like-a-tetris-ninja-6f4eb690aed5  
-  Discusses the intended use case and limitations of `combineReducers`, and presents a custom utility called `combineMultiKeyReducers` that will pass along specified slices of state to a reducer.
-  
-- **A small trick to write clean reducers**  
-  https://hackernoon.com/a-small-trick-to-write-clean-reducers-a0b1b1eff3d2  
-  Shows a contrived example of updating deeply nested state, and discusses use of `lodash/fp` to simplify the update logic instead.
-  
-
-#### Selectors and Normalization
-
-**Related topics**: 
-- [Redux Architecture - Encapsulation](./redux-architecture.md#encapsulation-and-reusability)
-- [Redux Performance](./react-performance.md#redux-performance)
-
-
-- **Querying a Redux Store**  
-  https://medium.com/@adamrackis/querying-a-redux-store-37db8c7f3b0f  
-  A look at best practices for organizing and storing data in Redux, including normalizing data and use of selector functions.
-  
-- **Normalizing Redux Stores for Maximum Code Reuse**  
-  https://medium.com/@adamrackis/normalizing-redux-stores-for-maximum-code-reuse-ae6e3844ae95  
-  Thoughts on how normalized Redux stores enable some useful data handling approaches, with examples of using selector functions to denormalize hierarchical data.
-  
-- **Redux Normalizr: Improve your State Management**  
-  http://www.robinwieruch.de/the-soundcloud-client-in-react-redux-normalizr/  
-  A tutorial describing how to use Normalizr for improved data management of nested data in Redux
-
-- **Using normalizr.js in a Redux store**  
-  https://medium.com/@mcowpercoles/using-normalizr-js-in-a-redux-store-96ab33991369  
-  Some examples of using Normalizr and selectors to manage normalized data
-  
-- **Memoize-Immutable: efficient memoizer for Redux**  
-  https://blog.prototypo.io/memoize-immutable-efficient-memoizer-for-redux-and-other-immutable-environments-59277fefa45f  
-  Discusses principles of immutability and memoization, and a library they built to help memoize Redux data lookups
-  
-- **Two mistakes I made working with Redux**  
-  http://www.mattzeunert.com/2016/06/01/redux-mistakes.html  
-  Some suggestions on how to handle denormalizing data and defining actions.
-
-- **Practical Redux: Using Redux-ORM**  
-  http://blog.isquaredsoftware.com/2016/10/practical-redux-part-1-redux-orm-basics/  
-  http://blog.isquaredsoftware.com/2016/10/practical-redux-part-2-redux-orm-concepts-and-techniques/  
-  A look at how Redux-ORM can help manage normalized data in a Redux store, including use cases, basic usage, key concepts, and advanced techniques.
-  
-- **"How do you add/remove to a redux store generated with normalizr?**  
-  http://stackoverflow.com/questions/34954726/how-do-you-add-remove-to-a-redux-store-generated-with-normalizr  
-  Stack Overflow discussion of how to handle updates to normalized data
-
-- **"Any deep-dive/advanced tutorials on reselect?"**  
-  https://www.reddit.com/r/reactjs/comments/5dxasp/any_deepdiveadvanced_tutorials_on_reselect/  
-  Discussion on passing arguments to Reselect selectors, and how to use "factory functions" to define per-component selectors for Redux `mapState` functions
-
-- **ReactCasts #8: Selectors in Redux**  
-  https://www.youtube.com/watch?v=frT3to2ACCw  
-  A great overview of why and how to use selector functions to retrieve data from the store, and derive additional data from store values
-  
-- **GraphQL is not only for Backend**  
-  https://riad.blog/2017/01/07/graphql-is-not-only-for-backend-react-redux/  
-  A look at how to use GraphQL to query into a Redux store
-  
-- **Dissecting Twitter's Redux Store**  
-  https://medium.com/statuscode/dissecting-twitters-redux-store-d7280b62c6b1  
-  https://medium.com/@nuncamind/diving-deeper-into-twitters-redux-store-adventures-in-minified-vendor-javascript-67fbac5dc219  
-  An informative look at the contents of the Redux store for Twitter's new mobile site.  The second article shows how to dig through the minified JS to enable use of the Redux DevTools against a production site.
-  
-- **Advanced Redux Entity Normalization**  
-  https://medium.com/@dcousineau/advanced-redux-entity-normalization-f5f1fe2aefc5  
-  Describes a "keyWindow" concept for tracking subsets of entities in state, similar to an SQL "view".  A useful extension to the idea of normalized data.
-  
-- **"Why are you supposed to normalize data in Redux?"**  
-  https://twitter.com/AdamRackis/status/847883670950219776  
-  A Twitter thread with some excellent discussion, explaining why use of normalized data is encouraged with Redux.
-  
-- **Redux Clerk: Reusable action creators and reducers for async CRUD**  
-  https://inside.getambassador.com/redux-clerk-reusable-action-creators-and-reducers-for-async-crud-b0b6954f7056  
-  Discussion of a library that tries to reduce the repetitive nature of async CRUD work in Redux
-  
-- **json-api-normalizer: An Easy Way To Integrate the JSON API and Redux**  
-  https://www.smashingmagazine.com/2017/05/json-api-normalizer-redux/  
-  An in-depth article discussing why normalization of data is a good practice with Redux, and how use of the JSON API format can make normalized data easier to work with.
-  
-- **How I Stumbled Upon Normalizing Redux State**  
-  http://kyleshevlin.com/how-i-stumbled-upon-normalizing-redux-state/  
-  A short summary of the benefits and concept behind normalizing state
-  
-- **React, Reselect, and Redux**  
-  https://medium.com/@parkerdan/react-reselect-and-redux-b34017f8194c  
-  An explanation of how Reselect's memoized selector functions are useful in Redux apps, and how to create unique selector instances for each component instance.
-  
-- **Use Selectors in Redux for Great Good**  
-  https://medium.com/@TomasEhrlich/use-selectors-in-redux-for-great-good-59286ce2e2a1  
-  A short article explaining the importance of selectors, with a few examples of how they benefit applications and how to use them.
-  
-- **Reselect with Redux and React**  
-  https://www.youtube.com/watch?v=6Xwo5mVxDqI  
-  A screencast that introduces the Reselect library and discusses why it's useful in Redux apps
-
-
-#### UI and Widget Implementations
-
-- **"How can I display a modal dialog in Redux?"**  
-  http://stackoverflow.com/questions/35623656/how-can-i-display-a-modal-dialog-in-redux-that-performs-asynchronous-actions/35641680  
-  Dan Abramov describes a great technique for descriptively managing React modal dialogs using Redux actions and state, by storing names of components and their props.
-
-- **Creating Reusable Generic Modals in React and Redux**  
-  http://blog.isquaredsoftware.com/2016/11/posts-on-packtpub-generic-redux-modals-and-building-better-bundles/  
-  https://www.reddit.com/r/reactjs/comments/4wjmme/implement_a_confirm_modal_using_react_redux/d68ajcw?context=3  
-  Describes an extension to Dan's technique that allows generic "picker" dialogs such as a ColorPicker to be reused by different parts of an application while keeping the Redux state serializable.  (Blog post is based on my original comment on Reddit.)
-  
-- **Implement a confirm modal using React & Redux**  
-  http://jslancer.com/2016/08/07/implement-a-confirm-modal-using-react-redux/  
-  Demonstrates wrapping up an existing modal library to be controlled by Redux actions
-  
-- **Implementing Search/Filter on a list in React and Redux**  
-  https://medium.com/@yaoxiao1222/implementing-search-filter-a-list-on-redux-react-bb5de8d0a3ad  
-  Some quick examples of using Redux to supply a list of items as a prop, and using React local component state to store a filtered version based on inputs.
-  
-- **Creating Reusable Generic Modal Dialogs with React and Redux**  
-  https://www.packtpub.com/books/content/creating-reusable-generic-modals-react-and-redux  
-  A quick look at how to get results from generic dialogs like a ColorPicker, while keeping your Redux state serializable and component structure decoupled.
-  
-- **Animating with React, Redux, and D3**  
-  https://medium.com/swizec-a-geek-with-a-hat/animating-with-react-redux-and-d3-80852153a25b  
-  Explanation and examples of drawing animated particles using D3 to calculate new positions, Redux to store the state, and React to render them.
-  
-- **Open Sourcing a Redux Component**  
-  https://medium.com/@itsBenCripps/open-sourcing-a-redux-component-bb82f260ff62  
-  Details how the author developed a complex React+Redux grid component, including HTML structure, proper use of Immutable.js for good perf, and lib exports.
-  
-- **Scalable Modals with React and Redux**  
-  https://codersmind.com/scalable-modals-react-redux/  
-  Demonstrates implementing the basic Redux modal manager technique described by Dan Abramov in his Stack Overflow answer.
-  
-- **A Redux-Saga Implementation of Modal Confirmation Dialogs in React**  
-  https://decembersoft.com/posts/a-redux-saga-implementation-of-modal-confirmation-dialogs-in-react-redux/  
-  Some examples of using sagas for controlling flow of async calls and dialog management
-  
-- **Practical Recursion: Implementing a File Item Tree View in React & Electron**  
-  https://codeburst.io/practical-recursion-implementing-a-file-tree-view-in-react-electron-af62e7b46d26?gi=da3b8e9bf9ee  
-  Demonstrates implementing a tree view component that shows folder structure read from the filesystem, and managing the visibility of tree nodes in Redux
-  
-- **How To Manage UI State with Redux**  
-  https://codeburst.io/how-to-manage-ui-state-with-redux-24deb6cf0d57  
-  An informative discussion of application state vs internal component state, how "UI state" fits into app state, and how to write a UI reducer that tracks UI state.
-  
-- **Introduce Redux local state to your React App**  
-  https://medium.com/@tangbenze/introduce-redux-local-state-to-your-react-app-9f96f18d4f35  
-  Demonstrates setup and use of a addon library to manage scoped actions, reducers, and connections for isolated component state.
-  
-- **Using react-redux-set-local**  
-  https://www.andrewfong.com/blog/2017/07/03/react-redux-set-local/  
-  Discussion of the rationale and implementation of a library for connecting isolated portions of a Redux store state to a component while maintaining separation between presentation and state management.
-  
-- **Making Toast from Scratch in React-Redux**  
-  https://spin.atomicobject.com/2017/07/12/react-redux-toast/  
-  A short tutorial that shows how to build your own "toast" notifications in React+Redux, with a link to the resulting implementation.
-  
-- **Toast notification system in a React/Redux application**  
-  https://atech.blog/natterly/toast-notification-system-in-a-react-redux-application  
-  The Natterly team walks through how they built a Redux-connected toast notification implementation.
-  
-- **A Functional Canvas Approach with Redux**  
-  https://medium.com/@peterxjang/a-functional-canvas-approach-with-redux-ce59a369241b  
-  https://medium.com/@peterxjang/a-functional-canvas-approach-with-redux-bab357d6c33c  
-  Some simple examples of how to use Redux and vanilla JS canvas code to draw canvas-based UIs with minimal dependencies.
-  
-  
-#### Redux and Forms
-
-- **Practical Redux, Part 7: Form Change Handling, Data Editing, and Feature Reducers**  
-  http://blog.isquaredsoftware.com/2017/01/practical-redux-part-7-forms-editing-reducers/  
-  Demonstrates how to use a custom form wrapper component to buffer input change events
-  
-- **Practical Redux, Part 8: Form Draft Data Management**  
-  http://blog.isquaredsoftware.com/2017/01/practical-redux-part-8-form-draft-data-management/  
-  Discusses how to implement logic to handle "draft/work-in-progress" data while editing items
-  
-- **Abstracted Form State with Redux-Form**  
-  https://speakerdeck.com/erikras/abstracted-form-state-with-redux-form  
-  Slides by the author of Redux-Form, discussing how forms work in plain HTML/Javascript, in React, and how the Redux-Form library can integrate them into Redux.
-  
-- **React, Redux, and Redux-Form**  
-  https://jokeyrhyme.github.io/2016/06/27/react-redux-redux-form.html  
-  Thoughts on the merits of using the Redux-Form library
-  
-- **Conversational sign-up form UI with React and Redux**  
-  http://jsforallof.us/2016/09/08/conversational-sign-up-form-ui-with-react-and-redux/  
-  An example of form management with Redux
-  
-- **Should you store your form state in Redux?**  
-  http://goshakkk.name/should-i-put-form-state-into-redux/  
-  Thoughts on the tradeoffs involved in storing form data in component state vs Redux, and different potential use cases.
-  
-- **Writing maintainable forms with Redux**  
-  https://medium.com/@SBoudrias/writing-maintainable-forms-with-redux-2ef30b5d0e35  
-  Some basic examples for handling validation, loading initial data, and change tracking in forms.
-  
-- **Using forms in React-Redux: Tips and Tricks**  
-  https://medium.com/@royisch/using-forms-in-react-redux-tips-and-tricks-48ad9c7522f6  
-  Some helpful suggestions for using Redux-Form to manage forms in a Redux app
-  
-- **Dealing with forms in React/Redux - A simple pattern**  
-  https://medium.com/@jonasjensen/dealing-with-forms-in-react-redux-a-simple-pattern-7b94b393eb26  
-  Helpful examples for writing some simple generic form-handling reducers and action creators
+- **Getting the most out of Redux + Sentry**  
+  https://blog.lingoapp.com/getting-the-most-out-of-redux-sentry-ecd8c737410d  
+  Describes how to use Sentry to monitor behavior of Redux apps in production
 
   
 #### Other  
@@ -378,20 +129,10 @@
 - **Let the Buyer Beware: React Redux Rerender Gotcha**  
   https://www.nathanl.in/posts/let-the-buyer-beware-react-redux-rerender-gotcha  
   An article describing some similar concerns regarding timing of Redux actions and React lifecycle methods, especially in regards to tracking loading state.
-  
-- **Why I created Redux-Tiles library to deal with Redux verbosity**  
-  http://blog.bloomca.me/2017/06/02/why-i-created-redux-tiles-library.html  
-  https://news.ycombinator.com/item?id=14482215  
-  Describes several concerns with increasing verbosity and complexity in Redux apps, and how the author's library can help simplify those.
 
 - **Manage analytics actions in React**  
   https://medium.com/trainline-engineering/manage-analytics-actions-in-react-67fae61495de  
   Discusses using Redux middleware and redux-observable to manage analytics behavior in isolation from the rest of the application.
-  
-- **VR Redux / ReactVR Redux Revisited**  
-  http://jimpurbrick.com/2017/01/04/vr-redux/  
-  http://jimpurbrick.com/2017/07/04/react-vr-redux-revisited/  
-  A pair of posts that discuss using ReactVR and Redux to implement a networked VR application, including using a Redux middleware to synchronize actions between the clients, and approaches to managing consistency and optimistic updates.
   
 - **Using dynamic localization to improve accessibility with React and Redux**  
   https://medium.com/checkr/using-dynamic-localization-to-improve-accessibility-with-react-and-redux-7650878af6ef  
@@ -400,9 +141,100 @@
 - **Evil things you do in Redux - dispatch in updating lifecycle methods**  
   https://hackernoon.com/evil-things-you-do-with-redux-dispatch-in-updating-lifecycle-methods-ad116de882d4  
   Thoughts on the pros and cons of dispatching Redux actions in React lifecycle methods, such as causing cascades of re-renders and updates in other components.
+ 
+- **Redux and JSON Schema**  
+  https://blog.prismatik.com.au/redux-and-json-schema-c63368931143  
+  Short discussion of the overall benefits of using JSON Schema to define data structures, and a Redux library that helps use those for Redux.
+  
+- **A Simple Way to Implement Timers and Timeouts in Redux**  
+  https://spin.atomicobject.com/2017/11/20/timers-timeouts-redux/  
+  A quick example of storing a "current time" value and timers as "expire times".
+  
+- **Redux Dead Drop**  
+  https://medium.com/@erikras/redux-dead-drop-1b9573705bec  
+  Describes a possible technique for passing messages between widely separated components, such as triggering focus on a particular DOM node
+
+  
+  
+#### Reducing Boilerplate
+
+- **Why I created Redux-Tiles library to deal with Redux verbosity**  
+  http://blog.bloomca.me/2017/06/02/why-i-created-redux-tiles-library.html  
+  https://news.ycombinator.com/item?id=14482215  
+  Describes several concerns with increasing verbosity and complexity in Redux apps, and how the author's library can help simplify those.
+  
+- **Reducing Redux Boilerplate with redux-actions**  
+  http://www.hypertext.io/redux/react/2017/10/30/redux-actions.html  
+  A short look at how the `redux-actions` lib can simplify the process of defining action type, action creators. and reducers.
+
+- **Reducing Redux: avoiding boilerplate with redux-scc**  
+  https://medium.com/onfido-tech/reducing-redux-avoiding-boilerplate-with-redux-scc-b72c80c338e5  
+  https://medium.com/onfido-tech/redux-scc-update-combined-actions-and-custom-types-ce346ea91e85  
+  Looks at how the redux-scc library allows building "store chunks", which simplify the amount of work needed to define and update a Redux store.
+  
+- **Redux Action Creator Creators**  
+  https://hackernoon.com/redux-action-creator-creators-6684b051d4c6  
+  An example of using functions that take additional arguments, and using those to generate action creators.  Includes example of using this to add analytics and promises to actions.
+  
+- **The only action you will ever need**  
+  https://medium.com/riipen-engineering/the-only-action-you-will-ever-need-f3a42661d2dd  
+  Looks at creating a reusable "fetch" action creator that can be customized to generate fetching logic for different REST API endpoints.
+  
+- **Redux mapStateToProps and mapDispatchToProps Shorthand**  
+  https://medium.com/@atomarranger/redux-mapstatetoprops-and-mapdispatchtoprops-shorthand-67d6cd78f132  
+  A quick example of the "object shorthand" supported by `connect` for `mapDispatch`, and use of Reselect's `createStructuredSelector` for equivalent behavior of `mapState`.
+  
+- **Less Redux Boilerplate with Union Types**  
+  https://codeburst.io/less-redux-boilerplate-with-union-types-3d5fd6acb53c  
+  Examples of using Elm-inspired "union types" to define Redux logic, as well as combining action creators and reducers in a single file similar to the "ducks" approach.
+  
+- **ARC - Simplifying async requests in Redux apps**  
+  https://medium.com/front-end-hacking/arc-simplifying-async-requests-in-redux-apps-e8052b874216  
+  Describes the "async action" pattern commonly used with Redux, and how the ARC library can simplify the process of generating actions, action creators, and reducers that work with async actions.
+  
+- **Abstracting Vuex/Redux Action Patterns**  
+  https://medium.com/coding-stones/abstracting-vuex-redux-action-patterns-8df36b0e2fcc  
+  Examples of generating action types and action creators that use similarly-formatted actions (such as FETCH_DATA_REQUEST/SUCCESS/ERROR).
+  
+- **Stop writing mapStateToProps, start using declarative models**  
+  https://medium.com/@kyleramirez/part-1-stop-writing-mapstatetoprops-start-using-declarative-models-ce72716db9fc  
+  https://medium.com/@kyleramirez/part-2-stop-writing-mapstatetoprops-start-using-declarative-models-403734a5f9ee  
+  https://medium.com/@kyleramirez/part-3-stop-writing-mapstatetoprops-start-using-declarative-models-3eb752d811b7  
+  Discusses a library called ReactiveRecord, which encapsulates the process of defining client-side models for REST APIs, fetching data, and reading it from the store.
+  
+- **"Comments on 'reducing boilerplate'"**  
+  https://www.reddit.com/r/reactjs/comments/7069ct/i_love_redux_but_i_hate_the_boilerplate/dn1mj4s/  
+  A great comment on what "boilerplate" actually means, how people optimize too much for initial dev time, and how Redux improves long-term maintainability.
+  
+- **How to delete hundreds (or thousands) of lines of ReduxJS code**  
+  https://medium.com/@ianduvall/how-to-delete-hundreds-or-thousands-of-lines-of-reduxjs-code-4736b34f7345  
+  Short examples of reusable action creator and reducer logic for handling "loading" state for multiple features in an app.
+  
+- **Keducer - Automate writing Redux reducers with 5 lines of Javascript**  
+  https://hackernoon.com/automate-writing-redux-reducers-with-5-lines-of-javascript-cecb79fb9a35  
+  https://www.reddit.com/r/javascript/comments/7i4t14/keducer_automate_writing_redux_reducers_with_5/  
+  Describes a small lib to generate reducers that handle merging in updated state.  Some good discussion in both the article comments and Reddit comments about the tradeoffs between having reducers "own" state, vs state being defined by action creators.
+  
+- **API Requests in Redux**  
+  https://tech.decisiv.com/api-requests-in-redux-part-1-9ce587628a90  
+  A series looking at a pattern for simplifying boilerplate around request pending/success/failure status.
+  
+- **Introducing redux-recompose**  
+  https://medium.com/wolox-driving-innovation/932e746b0198  
+  Introduces a reducer utility library to help simplify handling of async actions
+  
+- **The elegance of decorated Redux**  
+  https://blog.cloudboost.io/the-elegance-of-decorated-redux-b0bd7e2de16a  
+  Looks at using `connect` as a decorator, extracting `connect` definitions for reuse with multiple components, and combining multiple connections together to apply to a single component.
   
   
 #### Network Management
+
+- **VR Redux / ReactVR Redux Revisited**  
+  http://jimpurbrick.com/2017/01/04/vr-redux/  
+  http://jimpurbrick.com/2017/07/04/react-vr-redux-revisited/  
+  http://jimpurbrick.com/2017/11/10/replaying-replicated-redux/  
+  A set of posts that discuss using ReactVR and Redux to implement a networked VR application, including using a Redux middleware to synchronize actions between the clients, and approaches to managing consistency and optimistic updates.
 
 - **Ajax Polling in React with Redux and Sagas**  
   http://notjoshmiller.com/ajax-polling-in-react-with-redux/  
@@ -428,3 +260,11 @@
 - **Redux Websocket Integration**  
   https://medium.com/@ianovenden/redux-websocket-integration-c1a0d22d3189  
   A summary of one possible approach for integrating Websocket functionality into a React/Redux application architecture.
+
+- **What's the best way to store tokens in Redux?**  
+  https://michaelwashburnjr.com/whats-the-best-way-to-store-tokens-in-redux/  
+  Discusses pros and cons of storing auth tokens in app state vs localStorage, and what code should be responsible for handling the tokens.*
+  
+- **Remote Reducers and Predictive Reduction**  
+  https://medium.com/@seveibar/remote-reducers-and-predictive-reduction-572ab5054211  
+  Discusses potential techniques for synchronizing server-side state via Redux actions, and how to reconcile actions that are dispatched out of order.

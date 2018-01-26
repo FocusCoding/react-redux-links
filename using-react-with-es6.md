@@ -58,16 +58,16 @@
   https://swizec.com/blog/do-you-even-need-that-bind/swizec/7247  
   A dive through React's implementation of event handling, and why callback binding is needed
   
-- **React without `this`**  
-  https://medium.com/@baronmaximilianwilleford/react-without-this-39a76b8f2160  
-  Examples of how to write components in a style that does not require the `this` keyword.  Not the common approach, but an interesting idea.
-  
 - **Use Property Initializers for Cleaner React Components**  
   https://www.fullstackreact.com/articles/use-property-initializers-for-cleaner-react-components/  
   A look at how the "Class Properties"/"Property Initializer" syntax allows much cleaner definition of method binding, and how to configure Babel to use that syntax
   
 - **Javascript, React, This, and Programming Fundamentals**  
-  https://www.andrewfong.com/blog/2017/05/13/javascript-react-this-and-programming-fundamentals/  A helpful explanation of how `this` works in Javascript,  how method binding works, and how that relates to React classes and class methods.
+  https://www.andrewfong.com/blog/2017/05/13/javascript-react-this-and-programming-fundamentals/  
+  A helpful explanation of how `this` works in Javascript,  how method binding works, and how that relates to React classes and class methods.
+  
+  
+
   
   
 
@@ -85,3 +85,7 @@
   https://github.com/Klathmon/react-class-binder  
   https://www.reddit.com/r/reactjs/comments/4p0ytu/i_made_a_small_package_to_easily_autobind_this_in/  
   Automatically bind methods defined in a React component using the ES2015 class syntax (similar to how React.createClass works).  The Reddit comments have discussion on some differences between the various libs that implement autobinding.
+  
+- **Reflective Bind**  
+  https://github.com/flexport/reflective-bind  
+  A Babel plugin that transforms use of inline functions in render methods so you don't have to worry about rendering performance.

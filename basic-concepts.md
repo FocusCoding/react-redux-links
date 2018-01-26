@@ -31,9 +31,9 @@
   https://medium.freecodecamp.com/making-sense-of-front-end-build-tools-3a1b3a87043b  
   An approach to understanding the variety of build tools by categorizing them as "installing" vs "doing"
 
-- **The State of Javascript in 2016: Survey Results**
-  http://stateofjs.com/  
-  Results from a survey of over 9000 developers, covering use of Javascript tools, technologies, and concepts.
+- **The State of Javascript in 2017: Survey Results**
+  https://stateofjs.com/  
+  Results from a survey of over 23000 developers, covering use of Javascript tools, technologies, and concepts.
   
 - **The (R)Evolution of Web Development**  
   http://blog.isquaredsoftware.com/presentations/2016-10-revolution-of-web-dev/  
@@ -67,6 +67,22 @@
 - **Choosing a frontend framework in 2017**  
   https://medium.com/this-dot-labs/building-modern-web-applications-in-2017-791d2ef2e341  
   An excellent look at the history of the major client-side web frameworks, how they developed over the last few years, and some suggestions for when each framework might be appropriate.
+  
+- **The melting pot of JavaScript**  
+  https://increment.com/development/the-melting-pot-of-javascript/  
+  Dan Abramov discusses the apparent messiness of the JavaScript ecosystem, why there's a proliferation of tools and libraries, the complexity of configuring those tools, and how providing good defaults can lead to a better experience for the community.
+  
+- **Modern JavaScript Explained for Dinosaurs**  
+  https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70  
+  Recaps the history of how JavaScript tools have evolved to what they are today in 2017, to provide historical context.  Includes examples of how different tools were used and and what problems they help solve.
+  
+- **A Brief, Incomplete History of JavaScript**  
+  https://closebrace.com/articles/2017-09-11/a-brief-incomplete-history-of-javascript  
+  An excellent history lesson that recaps the four major eras of web development and JS usage: the Early Era, the jQuery Era, the Single Page App Era, and the Modern Era.
+  
+- **Frontend in 2017: The important parts**  
+  https://blog.logrocket.com/frontend-in-2017-the-important-parts-4548d085977f  
+  An overview of major trends, tools, and concepts in the front-end web dev world in 2017.  Very good look at what's popular, what's changing, and how these pieces fit together.
   
 
 #### Suggested Learning Approaches
@@ -111,7 +127,15 @@
 - **So you completed the official React tutorial. Now what?**  
   https://goshakkk.name/next-steps-official-react-tutorial/  
   General advice on how to approach learning new things in general without getting overloaded, as well as specific advice for concepts and ideas to learn about after grasping the basics of React.
-
+  
+- **5 practical tips to finally learn React in 2018**  
+  https://goshakkk.name/tips-finally-learn-react/  
+  Common-sense suggestions for simplifying the React learning process, including skipping buzzwords and hardcoding data.
+  
+- **Spellbook of Modern Web Dev**  
+  https://github.com/dexteryy/spellbook-of-modern-webdev#gui-framework  
+  A large list of categorized resources for dozens of web development-related topics.
+  
 
 #### General Suggestions for Learning
 

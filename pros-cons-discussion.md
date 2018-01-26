@@ -12,7 +12,7 @@
   A higher-level, more business-case look at the pros of React
   
 - **React: A Competitive Edge and a Business Decision**  
-  https://reactjs-tampabay-b63e2.firebaseapp.com/#/
+  https://reactjs-tampabay-b63e2.firebaseapp.com/#/  
   A slideshow laying out a number of arguments for using React
   
 - **React.js: The Good and the Bad**  
@@ -54,6 +54,22 @@
 - **Why We Chose React To Help Serve Millions of Educators**  
   http://engineering.teacherspayteachers.com/2017/08/02/why-we-chose-react-to-help-serve-millions-of-educators.html  
   The Teachers Pay Teachers team describes why they chose React to rebuild their UI, including the small API size, size of the community, battle-tested capabilities, and more.
+  
+- **Why Redux is the Future of Angular 2 and React**  
+  https://rangle.io/resources/why-redux-future-of-angular-react/  
+  A webinar video from Rangle.io, discussing the benefits of functional components and Redux for state management, and how Redux can be used with both React and Angular.
+  
+- **Justifying React to the Business**  
+  https://daveceddia.com/react-business-value/  
+  Covers several reasons why using React is a good business decision, including ease of maintenance, long-term usefulness, and risk, with a summary of justifications.
+  
+- **Why we built our new UI in React, from the ground up**  
+  https://blog.cloud-elements.com/dev-discuss-why-we-built-our-new-ui-in-react-from-the-ground-up  
+  The Cloud Elements team describes why they rewrote their UI in React, and how the React ecosystem worked well for their approach.
+  
+- **Advocating for software quality at METRO**  
+  https://www.thoughtworks.com/insights/blog/advocating-software-quality-metro  
+  The METRO Cash & Carry team discusses how they've handled migrating parts of their app from Reflux to Redux, including motivation, business issues, the case for quality, and their strategy for migrating.
   
   
 #### Redux/Flux Comparisons
@@ -116,11 +132,23 @@
   https://twitter.com/modernserf/status/886426115874717697  
   Deep and fascinating analysis of how Redux compares to OOP and message-passing, how typical Redux usage can devolve towards Java-like "setter" functions with more boilerplate, and something of a plea for a higher-level "blessed" abstraction on top of Redux to make it easier to work with and learn for newbies.  Very worth reading.  The author originally wrote a tweetstorm, which I captured in the Storify link, and wrote the blog post to expand on those thoughts.  Finally, he followed up with a few more thoughts on abstract vs concrete examples in another shorter tweet thread.
   
+- **Thoughts on Redux and its similarities with OOP**  
+  https://medium.com/@dhruvrajvanshi/thoughts-on-redux-and-its-similarities-with-oop-6d200f34656  
+  Another post that's very similar to "What's So Great About Redux?".  with thoughts on the overall benefits of Redux and some potential disadvantages in relation to use of TypeScript.  Some good discussion in the comments, too.
+  
 - **6 mistakes Reacters make that Re-framers avoid**  
   https://purelyfunctional.tv/article/react-vs-re-frame/  
   https://news.ycombinator.com/item?id=15157527  
-  https://news.ycombinator.com/item?id=15158334
+  https://news.ycombinator.com/item?id=15158334  
   Comparisons between common React/Redux patterns, and how ClojureScript developers using the Reframe toolkit might solve the problems instead.  Some decent discussion in the HN comments, including one comment that directly responds to the points in the original article, and discusses how React+Redux give you the power to solve the specific problems you're dealing with.
+  
+- **Why is React More Popular than Angular?**  
+  https://javascriptreport.com/why-is-react-more-popular-than-angular/  
+  A look back at the announcements of React and Angular 2, thoughts on the respective paradigms, and how their popularity might change in the future.
+  
+- **Me on React: an old dog with new tricks**  
+  https://remysharp.com/2017/08/14/me-on-react-an-old-dog  
+  Remy Sharp, creator of JSBin, gives his thoughts and experiences learning React.  Discusses tooling support, styled-components, server-side rendering, hot reloading, tradeoffs and abstractions, and more.
   
 
 #### Comment Threads and Discussions
@@ -253,8 +281,44 @@ similar structures in ClojureScript.
   https://twitter.com/_jayphelps/status/846226930416345088  
   Jay Phelps, author of redux-observable, starts a long and involved Twitter thread about when it's appropriate to use Redux - use cases, app sizes, and reasons.  Lots of interesting opinions.
   
+- **"Redux app size, boilerplate, and abstraction"**  
+  https://news.ycombinator.com/item?id=15341562  
+  https://news.ycombinator.com/item?id=15344600  
+  https://news.ycombinator.com/item?id=15344447  
+  A long subthread of the "React 16" announcement post that discusses several aspects of Redux "boilerplate" and abstraction.  I answered a lot of questions about how Redux can and should be used, and there were actually some excellent comments about how Redux usage pays off for long-term app maintainability.
+  
+- **How Redux can make you a better developer**  
+  https://medium.cobeisfresh.com/how-redux-can-make-you-a-better-developer-30a094d5e3ec  
+  https://www.reddit.com/r/javascript/comments/7buksy/how_redux_can_make_you_a_better_developer/  
+  A blog post recapping aspects of functional programming and immutability in JS and Redux.  The Reddit thread has some excellent discussion on pros and cons of using Redux and how it has benefited people.
+  
+- **"React is focused on making your code understandable, not on making simple examples as short as possible"**  
+  https://twitter.com/dan_abramov/status/930380316463726593  
+  Some great points from Dan Abramov about React focusing on code predictability, maintainability, and data flow, rather than terseness.
+  
+- **"Ways to compose components and functionality without altering components?"**  
+  https://twitter.com/andrestaltz/status/939123607426486274  
+  https://twitter.com/andrestaltz/status/939257877600104448  
+  https://gist.github.com/staltz/08bf613199092eeb41ac8137d51eb5e6  
+  A couple very long Twitter threads with discussion from Andre Staltz (creator of Cycle), Dan Abramov, and Andrew Clark, looking at possible ways to handle composition of functionality for a "current humanized time" behavior.  Lots of interesting comments in the Twitter thread, and the example gist.  Also some useful comments from Andre on how someone from outside the React community might approach trying to solve problems using React.
+  
+  
   
 #### React's PATENTS License
+
+##### License Change to MIT
+
+- **Relicensing React, Jest, Flow, and Immutable.js**  
+  https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/  
+  Facebook's announcement that React and other projects are now using the MIT license
+
+- **4 Lessons from the 'React Patent License' Controversy**  
+  https://hackernoon.com/4-lessons-from-the-react-patent-license-controversy-3da3c4baf3a4  
+  Some reactions to the MIT license change, and thoughts on how it affects React.
+
+
+
+##### Prior Patents Discussion
 
 - **Facebook Open Source License FAQ**  
   https://code.facebook.com/pages/850928938376556  
@@ -296,9 +360,6 @@ similar structures in ClojureScript.
 - **"Comment on the Apache Foundation's statement about Facebook's BSD+Patents license"**  
   https://www.reddit.com/r/programming/comments/6nnxir/apache_foundation_bans_use_of_facebook_bsdpatents/dkb3v4p/?context=3  
   One of the best layman's summaries I've seen about what the patents file actually means and is intended to do.
-  
-
-  
   
 - **Further discussions**  
   https://news.ycombinator.com/item?id=12108273  

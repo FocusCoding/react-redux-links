@@ -29,26 +29,7 @@
 - **React Elements vs React Components**  
   https://tylermcginnis.com/react-elements-vs-react-components/  
   An explanation of how elements represent DOM nodes, what `createElement` does, and how components and rendering relate to elements
-  
-  
-#### JSX and Events
 
-- **How the JSX Transform Works**  
-  https://jaketrent.com/post/how-jsx-transform-works/  
-  A helpful explanation of how JSX tags are transformed into React elements, with example snippets
-
-- **JSX In Depth - an interactive tutorial**  
-  http://blog.klipse.tech/javascript/2016/12/14/jsx.html  
-  An interactive version of the "JSX in Depth" tutorial from the React docs
-  
-- **Events in React**  
-  https://www.kirupa.com/react/events_in_react.htm  
-  An introduction to React's event handling system, including useful tips and some gotchas
-  
-- **React events in depth**  
-  https://www.youtube.com/watch?v=dRo_egw7tBc  
-  A video chat between Kent C Dodds, Dan Abramov, and Ben Alpert, discussing how events work in React
-  
 
 #### Miniature React Implementations
 
@@ -87,7 +68,8 @@
   https://engineering.hexacta.com/didact-rendering-dom-elements-91c9aa08323b  
   https://engineering.hexacta.com/didact-instances-reconciliation-and-virtual-dom-9316d650f1d0  
   https://engineering.hexacta.com/didact-components-and-state-53ab4c900e37  
-  An ongoing series of articles showing how to build parts of React's API and implementation, like `createElement`.
+  https://engineering.hexacta.com/didact-fiber-incremental-reconciliation-b2fe028dcaec  
+  An ongoing series of articles showing how to build parts of React's API and implementation, like `createElement`, `setState`, and the "Fiber" reconciliation approach.
   
 - **deact: React under the hood**  
   https://github.com/lukebelliveau/deact  
@@ -99,6 +81,14 @@
   http://www.mattgreer.org/articles/react-internals-part-three-basic-updating/  
   http://www.mattgreer.org/articles/react-internals-part-four-setState/  
   A 5-part series that will recreate React from the ground up, illustrating how it works along the way.
+  
+- **Making a custom React renderer**  
+  https://github.com/nitin42/Making-a-custom-React-renderer  
+  A 4-part that teaches how to build a React reconciler for React 16 that renders to a Word document
+  
+- **Extending React**  
+  https://www.javascriptjanuary.com/blog/extending-react  
+  Walks through building a very simplified mini React clone, including `createElement`, rendering to the DOM, and `setState` updates
   
   
 #### Implementation and Internals
@@ -177,9 +167,41 @@
   https://medium.com/@asolove/preact-internals-2-the-component-model-36a05e32957b  
   https://medium.com/@asolove/preact-internals-3-some-fiddly-little-bits-f353b1ad7abc  
   A 3-part series that dives into the implementation and concepts of the Preact library codebase.
+  
+- **An Interview with the React Team About Wordpress and Project Gutenberg**  
+  https://wpcouple.com/interview-react-team-facebook-wordpress-gutenberg/  
+  A Wordpress community site interviews Dan Abramov, Andrew Clark, and Sophie Alpert about a variety of topics, including how they prioritize features, how React is tested, dealing with breaking changes, downsides of React, and aspects of Wordpress using React for its "Project Gutenberg" tool.
+  
+- **The React Story: How Facebook's Instagram Acquisition Led to the Open Sourcing of React**  
+  https://stackshare.io/posts/the-react-story  
+  An extensive podcast interview with Pete Hunt, former React team member, recounting his early work at Facebook, how he began using React at Instagram, how that led to the growth of React inside Facebook, and how the decision to open-source React happened.  Page includes a complete transcript of the discussion.
    
+- **How exactly does React handle events?**  
+  https://levelup.gitconnected.com/how-exactly-does-react-handles-events-71e8b5e359f2  
+  A detailed look at how React's internal event handling works, including normalization of events, SyntheticEvent objects, and more.
+  
+- **A look inside React Fiber**  
+  http://makersden.io/blog/look-inside-fiber/  
+  Traces through the source code for React 16 / React Fiber, starting with the main `render()` function and diving down from there through the system.
+  
+- **Understanding the React Source Code**  
+  https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-i-80263fe46cf1  
+  https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-ii-79e7e8bed56c  
+  https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-iii-69c2711c5f33  
+  https://hackernoon.com/understanding-the-react-source-code-iv-e3c4b66da12c  
+  https://hackernoon.com/understanding-the-react-source-code-v-812d69a79fb9  
+  Walks through the critical path of React 15's source code, tracing how a simple component gets rendered.
+  
 
 #### React Fiber
+  
+- **React v16.0**  
+  https://reactjs.org/blog/2017/09/26/react-v16.0.html  
+  The React team officially announces the release of React 16 and describes the new features, including returning arrays, error handling, better server-side rendering, and more.
+  
+- **React 16: A look inside an API-compatible rewrite**  
+  https://code.facebook.com/posts/1716776591680069/react-16-a-look-inside-an-api-compatible-rewrite-of-our-frontend-ui-library/  
+  The React team describes how they handled building and testing React 16 to be backwards compatible with existing code.
   
 - **ReactConf 2017: A Cartoon Intro to Fiber**  
   https://youtu.be/ZCuYPiUIONs  
@@ -197,6 +219,18 @@
   https://hackernoon.com/top-resources-to-explore-react-fiber-9a2b19114520  
   A helpful list of links to further articles and resources for learning about React Fiber
   
+- **React Fiber for the rest of us**  
+  http://www.benmvp.com/slides/2017/reactboston/fiber.html#/  
+  Slides from Ben Ilegbodu's ReactBoston presentation, which summarize the changes in React 16.
+  
+- **What's new in React 16?**
+  https://www.robinwieruch.de/what-is-new-in-react-16/  
+  A very useful look at the new user-facing features in React 16, with code examples.
+  
+- **Rethinking with React 16**  
+  https://www.javascriptjanuary.com/blog/rethinking-with-react-16  
+  An informative overview of the major changes in React 16, including the goals of the "React Fiber" rewrite, Fragments, Error Boundaries, server-side rendering improvements, and more.
+  
 - **React Fiber Architecture**  
   https://github.com/acdlite/react-fiber-architecture  
   A description of React's new core algorithm, React Fiber
@@ -213,6 +247,6 @@
   https://www.youtube.com/watch?v=crM1iRVGpGQ  
   Kent C Dodds interviews Dan Abramov and Andrew Clark about what React Fiber is intended to do, how it works, and what it means for the React codebase.
   
-- **A look inside React Fiber**  
-  http://makersden.io/blog/look-inside-fiber/  
-  Traces through the source code for React 16 / React Fiber, starting with the main `render()` function and diving down from there through the system.
+- **What is React Fiber?**  
+  https://giamir.com/what-is-react-fiber  
+  An overview of the React Fiber rewrite, and how React's reconciler has been rewritten to improve performance and make rendering more flexible.

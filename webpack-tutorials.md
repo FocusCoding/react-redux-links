@@ -8,10 +8,19 @@ Also see the [Awesome Webpack list](https://github.com/d3viant0ne/awesome-webpac
 - **Webpack Documentation**  
   https://webpack.js.org/  
   Webpack's new documentation site, explaining concepts, configuration, and recipes
+  
+- **Webpack Academy**  
+  https://webpack.academy/  
+  Courses on Webpack concepts and usage, from the Webpack team.
 
 - **Webpack from First Principles**  
   https://www.youtube.com/watch?v=WQue1AN93YU  
   A screencast video explaining what Webpack is and why you would want to use it
+  
+- **"Having a hard time understanding Webpack"**  
+  https://www.reddit.com/r/javascript/comments/7qdksl/having_a_hard_time_understanding_webpack/dsoq9p3/  
+  https://www.reddit.com/r/javascript/comments/7qdksl/having_a_hard_time_understanding_webpack/dsphcmb/  
+  A fantastic, friendly, detailed explanation of why you would want to use Webpack and what problems it solves.  Written as a walkthrough from "I have a bunch of scripts in my index.html and I have to keep them all in the right order", up to "I have a lot of individual files and they need to be bundled together".
 
 - **Egghead.io - Intro to Webpack (Playlist)**  
   https://egghead.io/playlists/intro-to-webpack-4ca2d994  
@@ -34,7 +43,7 @@ Also see the [Awesome Webpack list](https://github.com/d3viant0ne/awesome-webpac
   An intro to what Webpack is, what it can do, and how to use it.
   
 - **What is Webpack and what can it do for you?**  
-  http://x-team.com/2016/09/webpack-can-absolute-beginners/  
+  https://x-team.com/blog/webpack-can-absolute-beginners/  
   A plain-English explanation of what Webpack is and what problems it can help solve.
   
 - **Seamless client side Javascript with Webpack**  
@@ -56,10 +65,6 @@ Also see the [Awesome Webpack list](https://github.com/d3viant0ne/awesome-webpac
 - **Webpack 2**  
   http://sokra.github.io/slides/webpack2/#3  
   A slideshow from Webpack's original author.  Describes the basics of Webpack, how it can be used to build Progressive Web Apps, and improve speed and reliability through bundling.
-  
-- **Webpack Academy**  
-  https://webpack.academy/  
-  Courses on Webpack concepts and usage, from the Webpack team.
   
 
 #### Basic Tutorials
@@ -164,11 +169,11 @@ Also see the [Awesome Webpack list](https://github.com/d3viant0ne/awesome-webpac
 
 
 - **Webpack - From Apprentice to Journeyman**  
-  http://presentations.survivejs.com/webpack-from-apprentice-to-journeyman/#/
+  http://presentations.survivejs.com/webpack-from-apprentice-to-journeyman/#/  
   A presentation from Juho Vepsäläinen of the core Webpack team, explaining the basics of Webpack.
   
 - **Webpack - From Journeyman to Master**  
-  https://presentations.survivejs.com/webpack-from-journeyman-to-master/#/
+  https://presentations.survivejs.com/webpack-from-journeyman-to-master/#/  
   A follow-up presentation, digging into advanced Webpack concepts, configuration, and internals
   
 - **webpack By Example**  
@@ -179,13 +184,32 @@ Also see the [Awesome Webpack list](https://github.com/d3viant0ne/awesome-webpac
   A 4-part series that illustrates core Webpack concepts via a series of small example repos, with explanations of the source and concepts in the articles.
   
 - **How to setup Webpack 2.0 from scratch in 2017**  
-  https://medium.com/@wesharehoodies/easy-guide-for-webpack-2-0-from-scratch-fe508a3ce44e  
-  https://medium.com/@wesharehoodies/simple-beginner-guide-for-webpack-2-0-from-scratch-part-ii-66beb5dbccc2  
+  https://codeburst.io/easy-guide-for-webpack-2-0-from-scratch-fe508a3ce44e  
+  https://codeburst.io/simple-beginner-guide-for-webpack-2-0-from-scratch-part-ii-66beb5dbccc2  
+  https://codeburst.io/simple-beginner-guide-for-webpack-2-0-from-scratch-part-iii-d374c021f9fc  
+  https://codeburst.io/simple-beginner-guide-for-webpack-2-0-from-scratch-part-iv-102efc01ffad  
+  https://codeburst.io/simple-beginner-guide-for-webpack-2-0-from-scratch-part-v-495dba627718  
   A detailed tutorial that walks through setting up a Webpack config piece-by-piece, and explains several Webpack concepts along the way.
   
 - **A Webpack Setup that Makes Sense**  
   https://medium.com/@Idan_Co/a-webpack-setup-that-makes-sense-35b4b6b8ef5f  
   Looks at ways to define Webpack setup and tasks in a more modular, reusable manner.
+  
+- **Webpack: A Gentle Introduction to the Module Bundler**  
+  https://auth0.com/blog/webpack-a-gentle-introduction/  
+  A well-written tutorial that explains core Webpack concepts like entries, output, loaders, and plugins, and shows how to set up a basic build config for an application.
+
+- **Starting with Webpack from scratch**  
+  https://www.netlify.com/blog/2017/11/30/starting-with-webpack-from-scratch/  
+  Walks through setting up a Webpack config from the ground up, with explanations and examples of how to configure Webpack and what the resulting output looks like.
+  
+- **Webpack 3 quickstarter: Configure Webpack from scratch**  
+  https://medium.com/@nirjhor123/webpack-3-quickstarter-configure-webpack-from-scratch-30a6c394038a  
+  A walkthrough for Webpack setup that covers basic entry and output definition, webpack-dev-server setup, and adding loaders and plugins.
+  
+- **Setting up Webpack for any project**  
+  https://scotch.io/tutorials/setting-up-webpack-for-any-project  
+  Walks through the setup of a basic Webpack config, and common features such as loaders for Babel and SASS, plugins for extracting CSS, inserting defined constants, and tools for different development environments.
 
 
 #### Configuration Terms and Concepts

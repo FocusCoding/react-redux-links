@@ -138,6 +138,10 @@
   https://medium.com/javascript-inside/some-thoughts-on-forms-in-react-9ca2d9078c20  
   An extended look at several form-related concepts, including describing them as "view-driven" vs "model-driven", extracting form management into a Higher-Order Component, adding validation, and more.
   
+- **How to Work with Forms, Inputs, and Events in React**  
+  https://medium.com/capital-one-developers/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b  
+  An excerpt from the book "React Quickly", which gives an overview of the recommended way to use forms in a React app.
+  
   
 #### Form Validation
 
@@ -174,6 +178,10 @@
   https://goshakkk.name/y-no-field-level-validations/  
   Thoughts on why it's better to handle validation at the "whole form" level, rather than strictly per-field.
   
+- **Validating React forms upon submit**  
+  https://goshakkk.name/submit-time-validation-react/  
+  Discusses core concepts of validating form inputs, and demonstrates how to handle validations on submit for both uncontrolled and controlled components.
+  
 
 #### Other
 
@@ -182,9 +190,27 @@
   Examples of working with the react-jsonschema-form library, including defining form schemas, gotchas, and customization with specific widgets and types
   
 - **List or Form, why not both? Making a list with a built in editor in React**  
-  http://thereactionary.net/list-or-form-why-not-both-making-a-list-with-a-built-in-editor-in-react/  
+  http://web.archive.org/web/20161214145219/http://thereactionary.net/list-or-form-why-not-both-making-a-list-with-a-built-in-editor-in-react/  
   Builds an example of a list with the ability to do inline editing of items.
   
 - **Comparison of form libraries in React**  
   https://codebrahma.com/form-libraries-in-react/  
   A good comparison of several different React/Redux-based form libraries, with code snippets demonstrating usage.
+  
+- **The Joy of Forms with React and Formik**  
+  https://keyholesoftware.com/2017/10/23/the-joy-of-forms-with-react-and-formik/  
+  Looks at some of the complexities with handling forms in React, and how the Formik library can help simplify that logic.
+  
+- **Painless React Forms with Formik**  
+  https://hackernoon.com/painless-react-forms-with-formik-e61b70473c60  
+  Describes how the Formik library can help solve transforming props to form state, validation and error messages, and handling form submission.
+  
+- **Formik - Handling files and reCaptch**  
+  https://hackernoon.com/formik-handling-files-and-recaptcha-209cbeae10bc  
+  Demonstrates how to use the Formik library to accept uploaded files and work with reCaptcha validation.
+  
+- **Final Form / React Final Form**  
+  https://codeburst.io/final-form-the-road-to-the-checkered-flag-cd9b75c25fe  
+  https://medium.com/@erikras/final-form-arrays-and-mutators-13159cb7d285  
+  https://blog.cloudboost.io/final-form-decorators-calculated-fields-and-warnings-bf9cccd21b7e  
+  Erik Rasmussen, author of the popular Redux-Form library, introduces his new framework-agnostic Final Form library and its bindings for React.

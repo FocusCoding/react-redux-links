@@ -3,7 +3,7 @@
 
 #### Suggested Starter Kits for Learners
 
-**NOTE**: It's easy for someone new to the React/Redux ecosystem to get confused by some of these boilerplates and starter kits.  Many of them include dozens of specifically-configured libraries, and it can be hard for a learner to understand how all the pieces fit together.  If you're trying to learn React or Redux for the first time, it's suggested that you start with reading tutorials and articles first, until you have a reasonable understanding of how things work.  However, if you _do_ want to use a starter kit as a learning tool, I specifically suggest the ones in this section.  They are simpler, easier to understand, and well documented.  In particular, Create-React-App is highly recommended.
+**NOTE**: It's easy for someone new to the React/Redux ecosystem to get confused by some of these boilerplates and starter kits.  Many of them include dozens of specifically-configured libraries, and it can be hard for a learner to understand how all the pieces fit together.  If you're trying to learn React or Redux for the first time, it's suggested that you start with reading tutorials and articles first, until you have a reasonable understanding of how things work.  However, if you _do_ want to use a starter kit as a learning tool, I specifically suggest the ones in this section.  They are simpler, easier to understand, and well documented.  In particular, Create-React-App is highly recommended.  Also see [Should I use a boilerplate with React?](http://blog.jakoblind.no/should-i-use-a-boilerplate-for-react/) for similar thoughts.
 
 - **Create-React-App**  
   https://github.com/facebookincubator/create-react-app  
@@ -83,11 +83,15 @@
   http://habd.as/awesome-react-boilerplates/  
   Another good curated list of boilerplates for both React and React Native
   
+- **React Community: Starter Kit**  
+  https://reactjs.org/community/starter-kits.html  
+  A list of starter kits that are officially recommended by the React team, as well as other kits from the community.
+  
   
   
 #### React Project Setup
 
-- **Simple React Development in 2017**  
+- **Simple React Development in 2018**  
   https://hackernoon.com/simple-react-development-in-2017-113bd563691f  
   An excellent set of instructions for setting up a React project with minimal fuss and effort needed.  Includes links to some useful resources, and info on deploying the app to production.
   
@@ -133,3 +137,11 @@
   https://medium.com/@Torwori/setting-up-a-front-end-project-part-3-38f1681d310b  
   https://medium.com/@Torwori/setting-up-a-front-end-project-part-4-b6fe32e58e5  
   An in-depth tutorial series covering setup and configuration of many tools, including Git, Webpack, Babel, ESLint, and Typescript.
+  
+- **Setting up Webpack, Babel, and React from scratch in 2017**  
+  https://stanko.github.io/webpack-babel-react-revisited/  
+  A step-by-step tutorial that demonstrates each piece of the process needed to set up a build system from scratch.
+  
+- **How to set up React, Webpack 3, and Babel, in 2017**  
+  https://www.valentinog.com/blog/react-webpack-babel/  
+  A clear explanation of how to create a basic Webpack+Babel setup for a React app, with descriptions of why each step is necessary.
